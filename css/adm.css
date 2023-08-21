@@ -1,201 +1,93 @@
 @import url('https://use.typekit.net/szq4vai.css');
 
-*{
-    margin: 0; 
+/* General styles */
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'hack';
 }
+
 html, body {
     height: 100%;
 }
-body{
+
+body {
     min-height: 100vh;
     background: #242546;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-li{
+li {
     list-style: none;
 }
 
-h1,h2{
+h1, h2 {
     color: White;
 }
 
-
-.sidemenu{
+/* Sidemenu styles */
+.sidemenu {
     padding-top: 100px;
     position: absolute;
-    background:#2d2e5c;
+    background: #2d2e5c;
     width: 20vw;
     min-height: 100%;
     display: flex;
     flex-direction: column;
+    z-index: 1;
 }
 
-.sidemenu .brand{
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-img{
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    border-radius: 128px;
-}
-
-.seccion1{
+.seccion1 {
     margin-top: 100px;
     height: 100%;
 }
 
-.sidemenu a{
-	align-items:center ;
-	font-size :20px ;
-	padding :5px 40px ;
-	color :#ffd319 ;
-	display:flex ;
-	align-items:center ;
-
+.sidemenu a {
+    align-items: center;
+    font-size: 20px;
+    padding: 5px 40px;
+    color: #ffd319;
+    display: flex;
 }
 
-.sidemenu a:hover{
-	color :#ff901f ; 
+.sidemenu a:hover {
+    color: #ff901f;
 }
 
+/* Content styles */
+.inicio, .about, .skills, .proyectos, .contacto {
+    position: relative;
+    margin-left: calc(20vw + 50px);
+    margin-top: 85px;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: justify;
+    font-size: 15px;
+    width: calc(80vw - 100px);
+    color:white ;
+}
 
 .inicio {
-	position: relative; 
-	margin:auto ; 
-	margin-top :85px ; 
-	margin-left :350px ; 
-	padding :5px ; 
-	border-radius :8px ; 
 	text-align:center ; 
-	font-size :40px ; 
-	width :700px ; 
-	color :white ; 
+	font-size :40px ;
+  z-index: 0;
 }
 
-.about {
-	position:relative ; 
-	margin:auto ; 
-	margin-top :85px ; 
-	margin-left :350px ; 
-	padding :5px ; 
-	border-radius :8px ; 
-	text-align: justify ; 
-	font-size :15px ; 
-	width :700px ; 
-  color: white;
-}
-
-.about h2{
+.about h2, .skills h2, .proyectos h2, .contacto h2 {
 	margin-right :300px ; 
 	font-size :50px ; 
 	color :#f222ff ; 
 }
 
-.skills {
-    position: relative;
-    margin: auto;
-    margin-top: 85px;
-    margin-left: 350px;
-    padding: 5px;
-    border-radius: 8px;
-    text-align: justify;
-    font-size: 15px;
-    width: 700px;
-    color: white;
+.about p, .skills p, .proyectos p, .contacto p{
+	width :800px ; 
+	margin-top :40px ; 
+	margin-right :40px ; 
+	text-align :justify ; 
+	font-size :20px ; 
+	color :white; 
 }
-
-.skills h2 {
-    margin-right: 300px;
-    font-size: 50px;
-    color: #f222ff;
-}
-
-.skills p {
-    width: 800px;
-    margin-top: 40px;
-    margin-right: 40px;
-    text-align: justify;
-    font-size: 20px;
-    color: white;
-}
-
-.proyectos {
-    position: relative;
-    margin: auto;
-    margin-top: 85px;
-    margin-left: 350px;
-    padding: 5px;
-    border-radius: 8px;
-    text-align: justify;
-    font-size: 15px;
-    width: 700px;
-    color: white;
-}
-
-.proyectos h2 {
-    margin-right: 300px;
-    font-size: 50px;
-    color: #f222ff;
-}
-
-.proyectos p {
-    width: 800px;
-    margin-top: 40px;
-    margin-right: 40px;
-    text-align: justify;
-    font-size: 20px;
-    color:white ;
-}
-
-
-.about p{
-	width: 800px ; 
-	margin-top: 40px ; 
-	margin-right: 40px ; 
-	text-align: justify ; 
-	font-size: 20px ; 
-	color: white; 
-}
-
-
-.contacto {
-    position: relative;
-    margin: auto;
-    margin-top: 85px;
-    margin-left: 350px;
-    padding: 5px;
-    border-radius: 8px;
-    text-align: justify;
-    font-size: 15px;
-    width: 700px;
-    color: white;
-}
-
-.contacto h2 {
-    margin-right: 300px;
-    font-size: 50px;
-    color: #f222ff;
-}
-
-.contacto p {
-    width: 800px;
-    margin-top: 40px;
-    margin-right: 40px;
-    text-align: justify;
-    font-size: 20px;
-    color:white ;
-}
-
-
