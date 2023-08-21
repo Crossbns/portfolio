@@ -1,0 +1,155 @@
+
+@import url('https://use.typekit.net/szq4vai.css');
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'hack';
+}
+
+body{
+    min-height: 100vh;
+    background: #242546;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+h1,h2{
+    color: White;
+}
+
+.sidemenu{
+    padding-top: 100px;
+    position: absolute;
+    background:#2d2e5c;
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidemenu .brand{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 128px;
+}
+
+.seccion1{
+    margin-top: 100px;
+}
+
+.sidemenu a{
+    align-items: center;
+    font-size: 20px;
+    padding: 5px 40px;
+    color:   #ffd319;
+    display: flex;
+    align-items: center;
+
+}
+
+.sidemenu a:hover{
+    color:  #ff901f;
+}
+
+
+.inicio {
+    position: relative;
+    margin: auto;
+    margin-top: 85px;
+    margin-left: 350px;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 40px;
+    width: 700px;
+    color: white;
+}
+
+.presentación {
+    position: relative;
+    margin: auto;
+    margin-top: 85px;
+    margin-left: 350px;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 40px;
+    width: 700px;
+}
+
+.presentación h2{
+    margin-right: 300px;
+    font-size: 50px;
+    color: 	#f222ff;
+}
+
+
+.presentación p{
+    width: 800px;
+    margin-top: 40px;
+    margin-right: 40px;
+    text-align: justify;
+    font-size: 20px;
+    color: #6387ca;
+}
+
+.datos{
+    font-size: 30px;
+    margin-top: 400px;
+    margin-left: 300px;
+    border-radius: 2px;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+
+}
+
+
+.datos .media h2{
+    font-size: 30px;
+    margin-left: 60px;
+    color:#f222ff;
+    margin-bottom: 20px;
+}
+
+
+.datos .media a{
+    margin-top: 40px;
+    margin: 10px;
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #6387ca;
+    background-color:#00ffd5;
+    border-radius: 8px;
+
+}
+
+.datos .media a:hover{
+    
+    transform: scale(1.5);
+    transition: 0.5s;
+
+}
+
+
+
+
