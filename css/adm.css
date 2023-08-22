@@ -32,7 +32,7 @@ h1, h2 {
 /* Sidemenu styles */
 .sidemenu {
     padding-top: 100px;
-    position: absolute;
+    position: fixed;
     background: #2d2e5c;
     width: 20vw;
     min-height: 100%;
@@ -59,7 +59,23 @@ h1, h2 {
 }
 
 /* Content styles */
-.inicio, .about, .skills, .proyectos, .contacto {
+
+.inicio {
+    position: relative;
+    margin-left: calc(20vw + 50px);
+    margin-top: auto;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: justify;
+    font-size: 15px;
+    width: calc(80vw - 100px);
+    color:white ;
+	  text-align:center ; 
+	  font-size :40px ;
+    z-index: 0;
+}
+
+.about {
     position: relative;
     margin-left: calc(20vw + 50px);
     margin-top: 85px;
@@ -71,10 +87,40 @@ h1, h2 {
     color:white ;
 }
 
-.inicio {
-	text-align:center ; 
-	font-size :40px ;
-  z-index: 0;
+.skills {
+    position: relative;
+    margin-left: calc(20vw + 50px);
+    margin-top: 85px;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: justify;
+    font-size: 15px;
+    width: calc(80vw - 100px);
+    color:white ;
+}
+
+.proyectos {
+    position: relative;
+    margin-left: calc(20vw + 50px);
+    margin-top: 85px;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: justify;
+    font-size: 15px;
+    width: calc(80vw - 100px);
+    color:white ;
+}
+
+.contacto {
+    position: relative;
+    margin-left: calc(20vw + 50px);
+    margin-top: 85px;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: justify;
+    font-size: 15px;
+    width: calc(80vw - 100px);
+    color:white ;
 }
 
 .about h2, .skills h2, .proyectos h2, .contacto h2 {
