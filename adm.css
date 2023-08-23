@@ -1,0 +1,163 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para el menú lateral */
+.sidemenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+}
+
+.sidemenu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidemenu a:hover {
+  background-color: #444;
+}
+
+.sidemenu a i {
+  margin-right: 10px;
+}
+
+/* Estilos para las secciones */
+section {
+  margin-left: 200px;
+  padding: 20px;
+}
+
+section h2 {
+  font-family: "futura-pt", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+section div {
+  max-width: 800px;
+}
+
+section p {
+  font-family: "futura-pt", sans-serif;
+  font-size: 18px;
+}
+
+.inicio {
+  background-size: cover;
+}
+
+.inicio div {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.inicio h2 {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 10px;
+}
+
+
+/* Estilos para la sección de sobre mi */
+.about {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.about div {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+
+/* Estilos para la sección de skills */
+.skills {
+  background-color: white;
+  padding: 20px;
+}
+
+.skills div {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skills h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.skills ul {
+  list-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.skills li:first-child {
+    font-weight: bold;
+}
+/* Estilos para la sección de proyectos */
+.proyectos {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.proyectos div {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.proyectos h3 {
+  font-size: 24px;
+}
+
+.proyectos ul {
+  
+}
+
+.proyectos li {
+  
+}
+
+/* Estilos para la sección de contacto */
+.contacto {
+  
+}
+
+.contacto div {
+  
+}
+
+.contacto h3 {
+  
+}
+
+.contacto ul {
+  
+}
+
+.contacto li {
+  
+}
+
