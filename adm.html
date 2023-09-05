@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,86 +20,160 @@
     <link rel="stylesheet" href="adm.css" />
   </head>
   <body>
-    <div class="sidemenu">
-      <a href="#bienvenido"><i class="fa-solid fa-robot"></i>Inicio</a>
-      <a href="#presentación"><i class="fa-solid fa-robot"></i>Sobre Mi</a>
-      <a href="#skills"><i class="fa-solid fa-bolt"></i>Skills</a>
-      <a href="#proyectos"><i class="fa-solid fa-code"></i>Proyectos</a>
-      <a href="#contacto"><i class="fa-solid fa-phone"></i>Contacto</a>
-    </div>
 
-    <section class="inicio" id="<EUGPSCoordinates>bienvenido">
+    <div class="sidemenu">
+      <div class="elements">
+        <a href="#inicio"><i class="fa-solid fa-house"></i>Inicio</a>
+        <a href="#about"><i class="fa-solid fa-robot"></i>Sobre Mi</a>
+        <a href="#skills"><i class="fa-solid fa-bolt"></i>Skills</a>
+        <a href="#proyectos"><i class="fa-solid fa-code"></i>Proyectos</a>
+        <a href="#contacto"><i class="fa-solid fa-phone"></i>Contacto</a>
+      </div>
+    </div>
+    
+    <section class="inicio" id="inicio">
       
       <div>
-        <h2>Inicio</h2>
-        <!-- Content for the Inicio section -->
+        <h2>César Márquez</h2>
+        <p>Desarrollador Web & Bilingüe</p>
       </div>
     </section>
 
-    <section class="about" id="<EUGPSCoordinates>presentación">
+    <section class="about" id="about">
       <div>
-        <h2>Sobre Mi</h2>
-        ¡Mucho gusto! Soy un profesional en informática interesado por la
+        <h2>SOBRE MI</h2>
+        <p>¡Mucho gusto! Soy un profesional en informática interesado por la
         tecnología. Me desempeño en el desarrollo de software usando habilidades
         como la resolución de problemas, el autoaprendizaje, y la organización
         para crear código modular y escalable en el desarrollo soluciones de
-        software eficientes.
+        software eficientes.</p>
       </div>
     </section>
 
-    <section class="skills" id="<EUGPSCoordinates>skills">
-      <div>
-        <div>
-          <h2>Skills</h2>
-          <h3>Languages</h3>
+ 
+
+<section class="skills" id="skills">
+
+    <div class="skills-container"> 
+      <h2>SKILLS</h2>
+        <div class="lang">
+          <h3>FROT-END</h3>
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
+            <li><i class="fab fa-html5"></i> HTML</li>
+            <li><i class="fab fa-css3-alt"></i> CSS</li>
+            <li><i class="fab fa-js-square"></i> JavaScript</li>
+            <li><i class="fab fa-react"></i> React</li>
+            <li><i class="fas fa-server"></i> ExpressJs</li>
+            <li><i class="fab fa-microsoft"></i> C#</li>   
+            <li><i class="fas fa-code"></i> .NET</li>
+            <li><i class="fab fa-php"></i> PHP</li>
           </ul>
         </div>
-        <div>
-          <h3>Databases</h3>
+        <div class="db">
+          <h3>BACK-END</h3>
           <ul>
-            <li>MySQL</li>
-            <li>MongoDB</li>
-            <li>PostgreSQL</li>
+            <li><i class="fas fa-database"></i> MySQL</li>
+            <li><i class="fas fa-database"></i> SQL Server</li>
+            <li><i class="fas fa-database"></i> MongoDB</li>
+            <li><i class="fas fa-database"></i> PostgreSQL</li>
           </ul>
         </div>
 
-        <div>
-          <h3>Operating Systems</h3>
+        <div class="so">
+          <h3>SISTEMAS</h3>
           <ul>
-            <li>Windows</li>
-            <li>Linux</li>
-            <li>macOS</li>
+            <li><i class="fab fa-microsoft"></i> Windows</li>
+            <li><i class="fab fa-debian"></i> Debian</li>
+            <li><i class="fab fa-redhat"></i> Red Hat</li>
+            <li><i class="fab fa-linux"></i> Arch</li>
           </ul>
         </div>
 
-        <div>
-          <h3>Others</h3>
+        <div class="ot">
+          <h3>OTROS</h3>
           <ul>
-            <li>Git</li>
-            <li>Docker</li>
-            <li>AWS</li>
+            <li><i class="fab fa-git-alt"></i> Git</li>
+            <li><i class="fas fa-terminal"></i> Bash</li>
+            <li><i class="fab fa-docker"></i> Docker</li>
+            <li><i class="fab fa-aws"></i> AWS</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section class="proyectos" id="<EUGPSCoordinates>proyectos">
+    <section class="proyectos" id="proyectos">
       <div>
-        <h2>Proyectos</h2>
+        <h2>PROYECTOS</h2>
         <!-- Content for the Proyectos section -->
+        <ul>
+          <li>
+            <img src="resources/prod.png" class="img-proyecto">
+            <h3>Lista de Tareas</h3>
+            <p>Aplicación MERN de lista de tareas para organizar y gestionar tareas diarias, 
+              hábitos y pendientes.</p>
+            <ul>
+              <li><a href="enlace1"><i class="fab fa-github"></i></a></li>
+              <li><a href="enlace2"><i class="fas fa-globe"></i></a></li>
+            </ul>
+          </li>
+          <li>
+            <img src="resources/clima.png" class="img-proyecto">
+            <h3>Aplicación del Clima</h3>
+            <p>Aplicación del clima construida con React y weatherapi 
+              para proporcionar información en tiempo real sobre el clima en cualquier lugar del mundo.</p>
+            <ul>
+              <li><a href="enlace1"><i class="fab fa-github"></i></a></li>
+              <li><a href="enlace2"><i class="fas fa-globe"></i></a></li>
+            </ul>
+          </li>
+          <li>
+            <img src="resources/landing.png" class="img-proyecto">
+            <h3>Landing Page</h3>
+            <p>Landin Page desarrollada en HTML, CSS y Javascript con tematica Vegana.</p>
+            <ul>
+              <li><a href="enlace1"><i class="fab fa-github"></i></a></li>
+              <li><a href="enlace2"><i class="fas fa-globe"></i></a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
-    </section>
+    </section> 
+    
+    
+    
 
-    <section class="contacto" id="<EUGPSCoordinates>contacto">
-      <div>
-        <h2>Contacto</h2>
-        <!-- Content for the Contacto section -->
-      </div>
-    </section>
 
-  </body></html
+
+<section class="contacto" id="contacto">
+  <div>
+    <h2>CONTACTO</h2>
+    <ul>
+      <li>
+        <a href="https://wa.me/"><i class="fab fa-whatsapp"></i></a>
+      </li>
+      <li>
+        <a href="https://t.me/tuusuario"><i class="fab fa-telegram"></i></a>
+      </li>
+      <li>
+        <a href="https://github.com/Crossbns"><i class="fab fa-github"></i></a>
+      </li>
+      <li>
+        <a href="mailto:cesar.marquesal@gmail.com"><i class="fas fa-envelope"></i></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in//césar-leonardo-jesús-márquez-salazar-73ab17167/"><i class="fab fa-linkedin"></i></a>
+      </li> 
+    </ul> 
+  </div> 
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2023 César Márquez. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  </body>
+
+</html
