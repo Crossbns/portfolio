@@ -6,6 +6,7 @@
 body {
   font-family: 'Hack Nerd Font', sans-serif;
   line-height: 1.2;
+  width: 100%;
 }
 
 
@@ -37,7 +38,7 @@ body {
   display: block;
   padding: 20px; /* Aumentar el relleno */
   text-decoration: none;
-  font-size: 20px; /* Aumentar el tamaño de fuente */
+  font-size: 18px; /* Aumentar el tamaño de fuente */
   font-weight: bold;
   color: #000000;
 }
@@ -80,9 +81,9 @@ color:#007aff; /* Cambiar el color del texto */
 }
 
 
-
 .inicio {
-  margin-left: 100px;
+  width: 100%;
+  margin-left: 0;
   background-size: cover;
   background-color: #000000;
   color: white;
@@ -90,6 +91,10 @@ color:#007aff; /* Cambiar el color del texto */
   display: flex; /* Add this property to use flexbox */
   flex-direction: column; /* Add this property to align elements vertically */
   justify-content: center; /* Add this property to center elements vertically */
+}
+
+.inicio div {
+  margin-left: 200px;
 }
 
 .inicio p {
@@ -110,28 +115,22 @@ color:#007aff; /* Cambiar el color del texto */
   font-weight: bold;
   text-align: center;
 }
-.inicio div{
-    max-width:800px;
-    margin:auto;
-}
 
 
 
 
 /* Estilos para la sección de sobre mi */
 .about{
-  margin-left: 100px;
-  background-color:#000000;
-  padding:20px;
-  color:white;
-  display: flex; /* Use flexbox */
-  flex-direction: column; /* Align elements vertically */
-  justify-content: center; /* Center elements vertically */
-}
-
-.about div{
-  max-width:800px;
-  margin:0 auto;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  margin-left: 0;
+  background-size: cover;
+  background-color: #000000;
+  color: white;
+  display: flex; /* Add this property to use flexbox */
+  flex-direction: column; /* Add this property to align elements vertically */
+  justify-content: center; /* Add this property to center elements vertically */
 }
 
 .about h2 {
@@ -139,12 +138,20 @@ color:#007aff; /* Cambiar el color del texto */
 }
 
 .about p{
+  align-items:center;
   font-size:24px;
   line-height:1.5;
   color:white;
-  text-align: justify; /* Justify the text within the p element */
+  /*text-align: justify;*/
+  /* text-justify: inter-word; */
+  word-spacing: -6px;
 }
 
+
+
+.about div {
+  margin-left: 200px;
+}
 
 
 
@@ -152,23 +159,28 @@ color:#007aff; /* Cambiar el color del texto */
 
 
 .skills{
-  margin-left: 100px;
-  background-color:#000000;
-  padding: 20px;
-  color:white;
-  max-width: 100%;
+  width: 100%;
+  margin-left: 0;
+  background-size: cover;
+  background-color: #000000;
+  color: white;
   align-items: center;
+  display: flex; /* Add this property to use flexbox */
+  flex-direction: column; /* Add this property to align elements vertically */
+  justify-content: center; /* Add this property to center elements vertically */
 }
 
 .skills div{
+  margin-top: 40px;
+  margin-left: 100px;
   max-width: 800px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.skills div h2 {
+.skills h2 {
+  margin-left: 100px;
   color: white;
   display:inline-block;
   color:#FF3131;
@@ -229,17 +241,24 @@ font-weight: bold;
 
 /* Styles for the projects section */
 .proyectos {
-  margin-left: 100px;
+  width: 100%;
+  margin-left: 0;
+  background-size: cover;
   background-color: #000000;
-  padding: 20px;
   color: white;
-  height: 600px;
+  align-items: center;
+  display: flex; /* Add this property to use flexbox */
+  flex-direction: column; /* Add this property to align elements vertically */
+  justify-content: center; /* Add this property to center elements vertically */
 }
+
 
 .proyectos h2 {
   align-items: center;
   text-align: center;
 }
+
+
 
 .proyectos-container {
   display: grid;
@@ -248,8 +267,8 @@ font-weight: bold;
 }
 
 .proyectos div {
-  max-width: 1100px;
-  margin: 0 auto;
+  margin-left: 200px;
+  max-width: 100%;
 }
 
 
@@ -262,12 +281,13 @@ font-weight: bold;
   flex-wrap: nowrap; /* Prevent elements from wrapping into multiple rows */
   margin: 0;
   padding: 0;
+  margin-left: 20px;
 }
 
 .proyectos li {
   width: 100%;
   border: 1px solid #FF0000;
-  margin-right: 40px;
+  margin-right: 30px;
   border-radius: 8px;
   padding: 10px;
   margin-bottom: 20px;
@@ -323,23 +343,26 @@ margin-right:auto;
 
 /* Estilos para la sección de contacto */
 .contacto {
-    margin-left: 100px;
-    background-color:#000000;color:white;border:none;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.container {
-  margin-left: 200px;
+  width: 100%;
+  margin-left: 0;
+  background-size: cover;
+  background-color: #000000;
+  color: white;
+  align-items: center;
+  display: flex; /* Add this property to use flexbox */
+  flex-direction: column; /* Add this property to align elements vertically */
+  justify-content: center; /* Add this property to center elements vertically */
 }
 
 .contacto div {
-    max-width:1000px;margin:
-0 auto
+  margin-left: 200px;
+  max-width: 100%;
 }
-.contacto h3 {
-    font-size:24px;color:#007aff
+.contacto div h2 {
+  color: white;
+  display: center;
+  color:#FF3131;
+  text-align:center;
 }
 .contacto ul {
   display: flex;
@@ -357,23 +380,33 @@ margin-right:auto;
 }
 .contacto a {
     color:white;font-size:
-60px;margin:
+30px;margin:
 0 
 10px
 }
 
 footer {
+  margin-left: 0px;
   background-color: #333333;
+  width: 100%;
+  max-width: 100%;
   color: white;
   padding: 20px;
+  overflow-x: hidden;
 }
 
 footer .container {
-  max-width: 800px;
+  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
 }
 
 footer p {
   text-align: left;
 }
+
+footer div {
+  margin-left: 200px;
+}
+
 
