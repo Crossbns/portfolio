@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Hack Nerd Font';
+    src: local('Hack Nerd Font'), url('./public/Hack/HackNerdFontMono-Regular.ttf') format('truetype');
+  }
+  
+  body {
+    font-family: 'Hack Nerd Font', sans-serif;
+    line-height: 1.2;
+    width: 100%;
+  }
+  
+  
+  :root {
+    --color1: #444;
+    --color2: #333;
+  }
+  
+  /* Estilos generales */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+
+/* Styles for the projects section */
+.proyectos {
+  width: 100%;
+  margin-left: 0;
+  background-size: cover;
+  background-color: #000000;
+  color: #FF3131;
+  align-items: center;
+  display: flex; /* Add this property to use flexbox */
+  flex-direction: column; /* Add this property to align elements vertically */
+  justify-content: center; /* Add this property to center elements vertically */
+}
+
+
+.proyectos h2 {
+  align-items: center;
+  text-align: center;
+  color: #FF3131;
+}
+
+
+
+.proyectos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.proyectos div {
+  margin-left: 200px;
+  max-width: 100%;
+}
+
+
+.proyectos ul {
+  width: 100%;
+  list-style: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex; /* Use flexbox to align elements horizontally */
+  flex-wrap: nowrap; /* Prevent elements from wrapping into multiple rows */
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.proyectos li {
+  width: 100%;
+  border: 1px solid grey;
+  margin-right: 30px;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: grey;
+  text-align: center;
+  font-weight: bold;
+
+/* Adjust the shape of the main list elements here */
+}
+
+.proyectos li li {
+  margin-right: 20px;
+  font-size: 28px;
+  width: 60px;
+  margin-bottom: 5px;
+}
+
+.proyectos p{
+  color: white;
+  font-size: 16px;
+}
+
+.proyectos li ul{
+  display: flex; /* Add this line */
+  justify-content: center; /* Add this line */
+  align-items: center; /
+}
+
+
+.proyectos a {
+color:#FF3131;
+align-items:center;
+
+/* Adjust the shape of the links here */
+}
+
+.img-proyecto {
+width:400px; /* Adjust the image width */
+height:200px; /* Adjust the image height */
+display:block;
+max-width:100%; /* Ensure that the image is not wider than its container */
+margin-left:auto; /* Center the image horizontally */
+margin-right:auto;
+}
+
+.proyectos h3 {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #FF3131; /* Change the text color to white */
+}

@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Hack Nerd Font';
+    src: local('Hack Nerd Font'), url('./public/Hack/HackNerdFontMono-Regular.ttf') format('truetype');
+  }
+  
+  body {
+    font-family: 'Hack Nerd Font', sans-serif;
+    line-height: 1.2;
+    width: 100%;
+  }
+  
+  
+  :root {
+    --color1: #444;
+    --color2: #333;
+  }
+  
+  /* Estilos generales */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+
+/* Estilos para la sección de skills */
+.skills{
+  width: 100%;
+  margin-left: 0;
+  background-size: cover;
+  background-color: #000000;
+  color: #FF3131;
+  align-items: center;
+  display: flex; /* Add this property to use flexbox */
+  flex-direction: column; /* Add this property to align elements vertically */
+  justify-content: center; /* Add this property to center elements vertically */
+}
+
+.skills div{
+  margin-top: 40px;
+  margin-left: 100px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills h2 {
+  margin-left: 100px;
+  color: #FF3131;
+  display:inline-block;
+  text-align:center;
+}
+
+.skills h3{
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #FF3131;
+  font-weight:bold;
+  margin-left: 50px;
+}
+
+.skills ul{
+  list-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  justify-content: center; /* Add this property to center the elements horizontally */
+}
+
+
+
+.skills li {
+font-size: 16px;
+margin-right: 20px;
+color: white;
+text-align: center;
+border: 1px solid grey;
+border-radius: 8px;
+padding: 10px;
+margin-bottom: 10px;
+width: 150px;
+height: 40px;
+background-color: #000000;
+font-weight: bold;
+}
+
+
+
+.skills .skills-container div {
+  margin: 10px; 
+}
+
+.skills .skills-container{
+  width:100%;
+}
+
+.skills-container {
+  display:flex; 
+  flex-direction: column; 
+  margin-left:0; 
+}

@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Hack Nerd Font';
+  src: local('Hack Nerd Font'), url('./public/Hack/HackNerdFontMono-Regular.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Hack Nerd Font', sans-serif;
+  line-height: 1.2;
+  width: 100%;
+}
+
+
+:root {
+  --color1: #444;
+  --color2: #333;
+}
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+footer {
+  margin-left: 0px;
+  background-color: #333333;
+  width: 100%;
+  max-width: 100%;
+  color: white;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+footer .container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer p {
+  text-align: left;
+}
+
+footer div {
+  margin-left: 200px;
+}
+
+

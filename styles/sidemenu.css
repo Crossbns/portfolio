@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Hack Nerd Font';
+    src: local('Hack Nerd Font'), url('./public/Hack/HackNerdFontMono-Regular.ttf') format('truetype');
+  }
+  
+  body {
+    font-family: 'Hack Nerd Font', sans-serif;
+    line-height: 1.2;
+    width: 100%;
+  }
+  
+  
+  :root {
+    --color1: #444;
+    --color2: #333;
+  }
+  
+  /* Estilos generales */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+
+  /* Estilos para las secciones */
+section {
+    padding: 20px;
+    border-bottom: solid 1px #333333;
+    width: 100%;
+  }
+  
+  /* Estilos para los títulos h2 dentro de las secciones */
+  section h2 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #FF3131; /* Cambiar el color del texto */
+  }
+  
+  /* Estilos para los div dentro de las secciones */
+  section div {
+    max-width: 800px;
+  }
+  
+  /* Estilos para los párrafos dentro de las secciones */
+  section p {
+    font-size: 18px;
+    color:#007aff; /* Cambiar el color del texto */
+  }
+  
+  /* Estilos para el menú lateral */
+  .sidemenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 185px;
+    height: 100%;
+    background-color:#FF3131; /* Cambiar el color de fondo */
+    color: #02d7f2; /* Cambiar el color del texto */
+  }
+  
+  /* Estilos para los enlaces del menú lateral */
+  .sidemenu a {
+    display: block;
+    padding: 20px; /* Aumentar el relleno */
+    text-decoration: none;
+    font-size: 18px; /* Aumentar el tamaño de fuente */
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  /* Estilos para los enlaces del menú lateral al pasar el mouse */
+  .sidemenu a:hover {
+    background-color: #ffbcbc;
+  }
+  
+  /* Estilos para los íconos de los enlaces del menú lateral */
+  .sidemenu a i {
+    margin-right: 10px;
+  }
+  
+  /* Estilos para los elementos del menú lateral */
+  .sidemenu .elements {
+    margin-top: 100px; /* Agregar margen superior */
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media (max-width: 600px) {
+    
+    /* Estilos para el menú lateral en pantallas pequeñas */
+    .sidemenu {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    
+    /* Estilos para los enlaces del menú lateral en pantallas pequeñas */
+    .sidemenu a {
+      float: left;
+      width: auto;
+      text-align: center;
+      padding:10px;
+      border-top:1px solid #f2f2f2;
+      border-bottom:1px solid #f2f2f2;
+      border-right:1px solid #f2f2f2;
+      width:100%;
+      display:none; /* Esconde los enlaces */
+    }
+    
+    /* Muestra los enlaces al hacer clic en el icono de menú en pantallas pequeñas */
+    .sidemenu a.show {
+      display:block;
+    }
+  }
