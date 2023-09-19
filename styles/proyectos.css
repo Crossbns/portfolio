@@ -1,27 +1,4 @@
-@font-face {
-    font-family: 'Hack Nerd Font';
-    src: local('Hack Nerd Font'), url('./public/Hack/HackNerdFontMono-Regular.ttf') format('truetype');
-  }
-  
-  body {
-    font-family: 'Hack Nerd Font', sans-serif;
-    line-height: 1.2;
-    width: 100%;
-  }
-  
-  
-  :root {
-    --color1: #444;
-    --color2: #333;
-  }
-  
-  /* Estilos generales */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  
-  }
+
 
 /* Styles for the projects section */
 .proyectos {
@@ -123,3 +100,70 @@ margin-right:auto;
   font-size: 24px;
   color: #FF3131; /* Change the text color to white */
 }
+
+@media only screen and (max-width: 600px) {
+  .proyectos {
+    flex-direction: column;
+  }
+
+  .proyectos ul{
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .proyectos div{
+    margin-left: 20px;
+  }
+
+  .proyectos-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .proyectos li {
+    font-size: 14px; /* Reduce the font size */
+    margin-right: 10px;
+  }
+
+  .img-proyecto {
+    width:100%; /* Adjust the image width */
+    height:auto; /* Adjust the image height */
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  
+  .proyectos {
+      flex-direction: column;
+  }
+  
+  .proyectos ul{
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+
+  }
+  
+  .proyectos div{
+      margin-left: 30px;
+      margin-left: 0;
+
+  }
+  
+  .proyectos-container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .proyectos li {
+      font-size: 16px; /* Reduce the font size */
+      margin-right: 15px;
+  }
+  
+  .img-proyecto {
+      width:100%; /* Adjust the image width */
+      height:auto; /* Adjust the image height */
+  }
+  
+}
+
+  

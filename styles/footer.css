@@ -1,50 +1,44 @@
-@font-face {
-  font-family: 'Hack Nerd Font';
-  src: local('Hack Nerd Font'), url('./public/Hack/HackNerdFontMono-Regular.ttf') format('truetype');
-}
-
-body {
-  font-family: 'Hack Nerd Font', sans-serif;
-  line-height: 1.2;
-  width: 100%;
-}
-
-
-:root {
-  --color1: #444;
-  --color2: #333;
-}
-
-/* Estilos generales */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
-}
-
 footer {
-  margin-left: 0px;
+  margin-left: 0;
   background-color: #333333;
   width: 100%;
   max-width: 100%;
   color: white;
-  padding: 20px;
+  padding: 30px;
   overflow-x: hidden;
 }
 
 footer .container {
   max-width: 100%;
   width: 100%;
-  margin: 0 auto;
+  margin: auto; /* Center the container */
 }
 
 footer p {
-  text-align: left;
+  text-align: center;
 }
 
 footer div {
-  margin-left: 200px;
+  margin-top: 20px;
+  margin-left:200px; /* Center the div */
 }
 
+/* Estilos para pantallas pequeñas */
+@media (max-width:600px) {
 
+footer div {
+    margin-left:auto; /* Center the div on small screens */
+    margin-right:auto; /* Center the div on small screens */
+}
+
+}
+
+@media only screen and (max-width: 900px) {
+  
+  footer div {
+      margin-left:auto; /* Center the div on medium screens */
+      margin-right:auto; /* Center the div on medium screens */
+  }
+  
+  }
+  
