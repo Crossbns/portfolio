@@ -1,27 +1,25 @@
-
-
 /* Estilos para el menú lateral */
 .sidemenu {
-  position: fixed;
+  position: fixed; /* Fija el menú en la parte izquierda de la página */
   top: 0;
   left: 0;
-  width: 185px;
-  height: 100%;
-  background-color:#FF3131; /* Cambiar el color de fondo */
-  color: #02d7f2; /* Cambiar el color del texto */
+  width: 185px; /* Ancho del menú */
+  height: 100%; /* Altura del menú */
+  background-color:#FF3131; /* Color de fondo del menú */
+  color: #02d7f2; /* Color del texto del menú */
 }
 
 .sidemenu a {
-  display: block;
-  padding: 20px; /* Aumentar el relleno */
-  text-decoration: none;
-  font-size: 18px; /* Aumentar el tamaño de fuente */
-  font-weight: bold;
-  color: #000000;
+  display: block; /* Los enlaces se muestran como bloques, lo que les permite tener padding y dimensiones */
+  padding: 20px; /* Espacio alrededor del texto en los enlaces */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  font-size: 18px; /* Tamaño del texto en los enlaces */
+  font-weight: bold; /* Texto en negrita en los enlaces */
+  color: #000000; /* Color del texto en los enlaces */
 }
 
 .sidemenu a:hover {
-  background-color: #ffbcbc;
+  background-color: #ffbcbc; /* Color de fondo de los enlaces al pasar el mouse sobre ellos */
 }
 
 .sidemenu a i {
@@ -33,63 +31,65 @@
 }
 
 /* Estilos para pantallas pequeñas */
-@media (max-width: 600px) {
+/* Estilos para pantallas pequeñas */
+@media (max-width: 600px), (max-width: 900px) {
   .sidemenu {
-    width: 100%;
-    height: auto;
-    position: relative;
-    display:none; /* Esconde el menú */
-    transition: transform .3s ease-in-out; /* Agrega una transición suave al menú */
-    transform: translateX(-100%); /* Mueve el menú fuera de la pantalla */
-    flex-direction: row;
+      margin-bottom: 10px;
+      width: 100%; /* El menú ocupa todo el ancho de la pantalla */
+      height: auto;
+      display:flex; /* Los elementos del menú se muestran en una línea */
+      transition: transform .3s ease-in-out; /* Transición suave al cambiar el tamaño de la pantalla */
+      flex-direction: row;
+      position: fixed; /* El menú se fija en la parte superior de la página */
+      height: 50px; /* Altura del menú */
+      top: 0; /* El menú se posiciona en la parte superior de la página */
+      flex-direction: row; /* Los elementos del menú se alinean horizontalmente */
+      align-items: center; /* Centra los elementos del menú verticalmente */
+      justify-content: space-around; /* Los elementos del menú se distribuyen uniformemente a lo largo de la línea */ 
   }
-  
-  .sidemenu.open { /* Clase para mostrar el menú */
-    display:block;
-    transform: translateX(0); /* Mueve el menú a su posición original */
+
+  .sidemenu.open { 
+      display:block;
   }
-  
+
   .sidemenu a {
-    float: none;
-    width: auto;
-    text-align: center;
-    padding:10px;
-    border-top:1px solid #f2f2f2;
-    border-bottom:1px solid #f2f2f2;
-    border-right:1px solid #f2f2f2;
-    width:100%;
-    display:block; /* Muestra los enlaces */
-  }
+    margin: 0; /* Ajusta el margen a tu preferencia */
+    padding: 10px; /* Ajusta el padding a tu preferencia */
+    text-align:center; /* Centra el texto */
+    border-top:none;
+    border-bottom:none;
+    border-right:none;
+    width:auto;
+    display:inline-block;
+    line-height:50px;
 }
 
-@media only screen and (max-width: 900px) {
-  
-  .sidemenu {
-      width: 100%;
-      height: auto;
-      position: relative;
-      display:none; /* Esconde el menú */
-      transition: transform .3s ease-in-out; /* Agrega una transición suave al menú */
-      transform: translateX(-100%); /* Mueve el menú fuera de la pantalla */
-      flex-direction: row;
+.sidemenu a i {
+  font-size: 20px;
+  position:relative;
+  top:10px;
+  vertical-align: middle;
+  margin-right: 20px; /* Se aplica a todos los elementos */
+}
+
+.sidemenu a:last-child i {
+  margin-right: 0; /* Se elimina para el último elemento */
+}
+
+
+.elements {
+  display: flex; /* Usa flexbox para alinear los elementos */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  position:relative;
+  top:-60px;
+  margin-top:-10px;
+  box-sizing:border-box;
+  overflow:auto;
+}
+
+
+  .menu-text{
+      display:none;
   }
-    
-  .sidemenu.open { /* Clase para mostrar el menú */
-      display:block;
-      transform: translateX(0); /* Mueve el menú a su posición original */
-  }
-    
-  .sidemenu a {
-      float: none;
-      width: auto;
-      text-align: center;
-      padding:10px;
-      border-top:1px solid #f2f2f2;
-      border-bottom:1px solid #f2f2f2;
-      border-right:1px solid #f2f2f2;
-      width:100%;
-      display:block; /* Muestra los enlaces */
-  }
-  
-  }
-  
+}

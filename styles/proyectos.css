@@ -60,24 +60,25 @@
 /* Adjust the shape of the main list elements here */
 }
 
+.proyectos li ul {
+  display: flex; /* Los elementos hijos se muestran en línea */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+}
+
 .proyectos li li {
+  display: inline-block; /* Los elementos se muestran en línea */
   margin-right: 20px;
   font-size: 28px;
   width: 60px;
   margin-bottom: 5px;
 }
 
+
 .proyectos p{
   color: white;
   font-size: 16px;
 }
-
-.proyectos li ul{
-  display: flex; /* Add this line */
-  justify-content: center; /* Add this line */
-  align-items: center; /
-}
-
 
 .proyectos a {
 color:#FF3131;
@@ -107,9 +108,13 @@ margin-right:auto;
   }
 
   .proyectos ul{
-    flex-direction: column;
+    flex-direction: column; /* Los elementos hijos se muestran en línea */
     justify-content: center;
     margin-left: 0;
+  }
+
+  .proyectos li li {
+    flex-direction: row;
   }
 
   .proyectos div{
@@ -138,10 +143,14 @@ margin-right:auto;
   }
   
   .proyectos ul{
-    flex-direction: column;
+    flex-direction: column; /* Los elementos hijos se muestran en línea */
     justify-content: center;
     margin-left: 0;
 
+  }
+
+  .list {
+    flex-direction: row;
   }
   
   .proyectos div{
@@ -165,5 +174,3 @@ margin-right:auto;
   }
   
 }
-
-  

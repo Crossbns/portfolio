@@ -34,6 +34,7 @@
 @media (max-width: 600px) {
   
   .inicio {
+      margin-top: 50px;
       width: 100%;
       height:auto;
       margin-left:0; /* Reset the left margin */
@@ -53,6 +54,7 @@
   @media only screen and (max-width: 900px) {
     
     .inicio {
+        margin-top: 50px;
         width: 100%;
         height:auto;
         margin-left:0; /* Reset the left margin */
