@@ -7,6 +7,7 @@
     font-family: 'Hack Nerd Font', sans-serif;
     line-height: 1.2;
     width: 100%;
+    overflow-x: hidden;
   }
   
   :root {
@@ -32,21 +33,14 @@
     body {
       line-height: 1.0;
     }
-  
-    section {
-      padding: 10px;
-    }
+
   }
   
   @media only screen and (max-width: 900px) {
     body {
       line-height: 1.1;
     }
-  
-    section {
-      padding: 15px;
-      width: 100%;
-    }
+
   }
   
   
