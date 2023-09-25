@@ -25,6 +25,9 @@ footer div {
 
 /* Estilos para pantallas pequeñas */
 @media (max-width:600px) {
+  footer {
+    margin-bottom: 50px;
+  }
 
 footer div {
     margin-left:auto; /* Center the div on small screens */
@@ -34,6 +37,9 @@ footer div {
 }
 
 @media only screen and (max-width: 900px) {
+  footer {
+    margin-bottom: 50px;
+  }
   
   footer div {
       margin-left:auto; /* Center the div on medium screens */

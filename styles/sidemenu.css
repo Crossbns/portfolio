@@ -1,7 +1,6 @@
 /* Estilos para el menú lateral */
 .sidemenu {
   position: fixed; /* Fija el menú en la parte izquierda de la página */
-  top: 0;
   left: 0;
   width: 185px; /* Ancho del menú */
   height: 100%; /* Altura del menú */
@@ -31,18 +30,17 @@
 }
 
 /* Estilos para pantallas pequeñas */
-/* Estilos para pantallas pequeñas */
 @media (max-width: 600px), (max-width: 900px) {
   .sidemenu {
-      margin-bottom: 10px;
+      margin-bottom: 0;
       width: 100%; /* El menú ocupa todo el ancho de la pantalla */
       height: auto;
       display:flex; /* Los elementos del menú se muestran en una línea */
       transition: transform .3s ease-in-out; /* Transición suave al cambiar el tamaño de la pantalla */
       flex-direction: row;
-      position: fixed; /* El menú se fija en la parte superior de la página */
+      position: fixed; /* El menú se fija en la parte inferior de la página */
       height: 50px; /* Altura del menú */
-      top: 0; /* El menú se posiciona en la parte superior de la página */
+      bottom: 0; /* El menú se posiciona en la parte inferior de la página */
       flex-direction: row; /* Los elementos del menú se alinean horizontalmente */
       align-items: center; /* Centra los elementos del menú verticalmente */
       justify-content: space-around; /* Los elementos del menú se distribuyen uniformemente a lo largo de la línea */ 
@@ -89,7 +87,7 @@
 }
 
 
-  .menu-text{
-      display:none;
-  }
+.menu-text{
+    display:none;
+}
 }
