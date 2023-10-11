@@ -1,0 +1,64 @@
+{
+  "sidemenu": {
+    "sidemenu-home": "Home",
+    "sidemenu-about": "About Me",
+    "sidemenu-skills": "Skills",
+    "sidemenu-projects": "Projects",
+    "sidemenu-contact": "Contact",
+    "sidemenu-resume": "Resume"
+  },
+
+  "profile": {
+    "profile-name": "Cesar Marquez",
+    "profile-title": "Web Developer"
+  },
+
+  "about": {
+    "about-title": "About Me",
+    "about-description": "Pleasure to meet you! I am an IT professional with a keen interest in technology. I specialize in software development, utilizing skills such as problem-solving, self-learning, and organization to create modular and scalable code for the development of efficient software solutions."
+  },
+
+  "skills": {
+    "skills-title1": "SKILLS",
+    "skills-title2": "FRONT-END",
+    "skills-frontend-html": "HTML",
+    "skills-frontend-css": "CSS",
+    "skills-frontend-js": "JavaScript",
+    "skills-frontend-react": "React",
+    "skills-frontend-expressjs": "ExpressJs",
+    "skills-frontend-csharp": "C#",
+    "skills-frontend-dotnet": ".NET",
+    "skills-frontend-php": "PHP",
+
+    "skills-name": "BACK-END",
+    "skills-backend-mysql": "MySQL",
+    "skills-backend-sqlserver": "SQL Server",
+    "skills-backend-mongodb": "MongoDB",
+    "skills-backend-postgresql": "PostgreSQL",
+
+    "skills-titleos": "OS",
+    "skills-os-windows": "Windows",
+    "skills-os-debian": "Debian",
+    "skills-os-redhat": "Red Hat",
+    "skills-os-arch": "Arch",
+
+    "skills-titleother": "Others",
+    "skills-others-git": "Git",
+    "skills-others-bash": "Bash",
+    "skills-others-powershell": "Powershell"
+  },
+
+  "projects": {
+    "projects-proyectos": "PROYECTOS",
+    "projects-project1-title": "Task List",
+    "projects-project1-description": "MERN application of task list to organize and manage daily tasks, habits and pending tasks.",
+    "projects-project2-title": "Weather Application",
+    "projects-project2-description": "Weather application built with React and weatherapi to provide real-time information about the weather anywhere in the world.",
+    "projects-project3-title": "Stopwatch",
+    "projects-project3-description": "Stopwatch application developed in ReactJs to measure the elapsed time from a particular point to the moment it is observed."
+  },
+
+  "contact": {
+    "contact-contact": "CONTACT"
+  }
+}

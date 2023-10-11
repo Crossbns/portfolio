@@ -1,187 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>César Márquez</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://use.typekit.net/szq4vai.css" />
-    <script
-      src="https://kit.fontawesome.com/431fc3955d.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styles/about.css" />
-    <link rel="stylesheet" href="styles/contacto.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
-    <link rel="stylesheet" href="styles/inicio.css" />
-    <link rel="stylesheet" href="styles/proyectos.css" />
-    <link rel="stylesheet" href="styles/sidemenu.css" />
-    <link rel="stylesheet" href="styles/skills.css" />
-    <link rel="stylesheet" href="styles/body.css" />
-  </head>
-  <body>
+<head>
 
-    <div class="sidemenu">
-      <div class="elements">
-        <a href="#inicio"><i class="fa-solid fa-house"></i><span class="menu-text">Inicio</span></a>
-        <a href="#about"><i class="fa-solid fa-robot"></i><span class="menu-text">Sobre Mi</span></a>
-        <a href="#skills"><i class="fa-solid fa-bolt"></i><span class="menu-text">Skills</span></a>
-        <a href="#proyectos"><i class="fa-solid fa-code"></i><span class="menu-text">Proyectos</span></a>
-        <a href="#contacto"><i class="fa-solid fa-phone"></i><span class="menu-text">Contacto</span></a>
-        <a href="https://drive.google.com/file/d/1NpaT_tPxVjnEqzQRxL9i82nurC36fMWD/view?usp=sharing" target="_blank"><i class="fa-solid fa-download"></i><span class="menu-text">Curriculum</span></a>
-      </div>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>César Márquez</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.typekit.net/szq4vai.css" />
+  <script src="https://kit.fontawesome.com/431fc3955d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles/about.css" />
+  <link rel="stylesheet" href="styles/contacto.css" />
+  <link rel="stylesheet" href="styles/footer.css" />
+  <link rel="stylesheet" href="styles/inicio.css" />
+  <link rel="stylesheet" href="styles/proyectos.css" />
+  <link rel="stylesheet" href="styles/sidemenu.css" />
+  <link rel="stylesheet" href="styles/skills.css" />
+  <link rel="stylesheet" href="styles/body.css" />
+</head>
+
+<body>
+
+
+  <div class="sidemenu">
+    <div class="elements">
+      <a href="#inicio"><i class="fa-solid fa-house"></i><span class="menu-text" data-section="sidemenu" data-value="sidemenu-home">Inicio</span></a>
+      <a href="#about"><i class="fa-solid fa-robot"></i><span class="menu-text" data-section="sidemenu" data-value="sidemenu-about">Sobre Mi</span></a>
+      <a href="#skills"><i class="fa-solid fa-bolt"></i><span class="menu-text" data-section="sidemenu" data-value="sidemenu-skills">Skills</span></a>
+      <a href="#proyectos"><i class="fa-solid fa-code"></i><span class="menu-text" data-section="sidemenu" data-value="sidemenu-projects">Proyectos</span></a>
+      <a href="#contacto"><i class="fa-solid fa-phone"></i><span class="menu-text" data-section="sidemenu" data-value="sidemenu-contact">Contacto</span></a>
+      <a href="https://drive.google.com/file/d/1NpaT_tPxVjnEqzQRxL9i82nurC36fMWD/view?usp=sharing" target="_blank"><i
+          class="fa-solid fa-download"></i><span class="menu-text" data-section="sidemenu" data-value="sidemenu-resume">Curriculum</span></a>
     </div>
-    
-    
-    <section class="inicio" id="inicio">
-      
-      <div class="port">
-        <h2>César Márquez</h2>
-        <p>Desarrollador Web & Bilingüe</p>
-      </div>
+  </div>
 
-    </section>
 
-    <section class="about" id="about">
-      <div class="port">
-        <h2>SOBRE MI</h2>
-        <p>¡Mucho gusto! Soy un profesional en informática interesado por la tecnología.
+  <div id="flags" class="flags">
+    <div class="flags_item" data-language="es">
+      <img src="resources/es.svg">
+    </div>
+
+    <div class="flags_item" data-language="en">
+      <img src="resources/us.svg">
+    </div>
+  </div>
+
+
+  <section class="inicio" id="inicio">
+
+
+    <div class="port">
+      <h2 data-section="profile" data-value="profile-name">César Márquez</h2>
+      <p data-section="profile" data-value="profile-title">Desarrollador Web & Bilingüe</p>
+    </div>
+
+  </section>
+
+  <section class="about" id="about">
+    <div class="port">
+      <h2 data-section="about" data-value="about-title">SOBRE MI</h2>
+      <p data-section="about" data-value="about-description">¡Mucho gusto! Soy un profesional en informática interesado por la tecnología.
         <br>Me desempeño en el desarrollo de software usando habilidades como la resolución de problemas,
         <br>el autoaprendizaje, y la organización para crear código modular y escalable
-        <br>en el desarrollo soluciones de software eficientes.</p>
-      </div>
-    </section>
+        <br>en el desarrollo soluciones de software eficientes.
+      </p>
+    </div>
+  </section>
 
- 
 
-<section class="skills" id="skills">
 
-    <div> 
-      <h2>SKILLS</h2>
-        <div class="lang">
-          <h3>FROT-END</h3>
-          <ul>
-            <li><i class="fab fa-html5"></i> HTML</li>
-            <li><i class="fab fa-css3-alt"></i> CSS</li>
-            <li><i class="fab fa-js-square"></i> JavaScript</li>
-            <li><i class="fab fa-react"></i> React</li>
-            <li><i class="fas fa-server"></i> ExpressJs</li>
-            <li><i class="fab fa-microsoft"></i> C#</li>   
-            <li><i class="fas fa-code"></i> .NET</li>
-            <li><i class="fab fa-php"></i> PHP</li>
-          </ul>
-        </div>
-        <div class="db">
-          <h3>BACK-END</h3>
-          <ul>
-            <li><i class="fas fa-database"></i> MySQL</li>
-            <li><i class="fas fa-database"></i> SQL Server</li>
-            <li><i class="fas fa-database"></i> MongoDB</li>
-            <li><i class="fas fa-database"></i> PostgreSQL</li>
-          </ul>
-        </div>
+  <section class="skills" id="skills">
 
-        <div class="so">
-          <h3>SISTEMAS</h3>
-          <ul>
-            <li><i class="fab fa-microsoft"></i> Windows</li>
-            <li><i class="fab fa-debian"></i> Debian</li>
-            <li><i class="fab fa-redhat"></i> Red Hat</li>
-            <li><i class="fab fa-linux"></i> Arch</li>
-          </ul>
-        </div>
-
-        <div class="ot">
-          <h3>OTROS</h3>
-          <ul>
-            <li><i class="fab fa-git-alt"></i> Git</li>
-            <li><i class="fas fa-terminal"></i> Bash</li>
-            <li><i class="fas fa-terminal"></i> Powershell</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="proyectos" id="proyectos">
-      <div class="port">
-        <h2>PROYECTOS</h2>
-        <!-- Content for the Proyectos section -->
-        <ul class="container">
-          <li>
-            <img src="resources/prod.png" class="img-proyecto">
-            <h3>Lista de Tareas</h3>
-            <p>Aplicación MERN de lista de tareas para organizar y gestionar tareas diarias, 
-              hábitos y pendientes.</p>
-            <ul>
-              <li class="list"><a href="https://github.com/Crossbns/prodlist" target="_blank"><i class="fab fa-github"></i></a></li>
-              <li class="list"><a href="https://prodlist-dttg.onrender.com" target="_blank"><i class="fas fa-globe"></i></a></li>
-            </ul>
-          </li>
-          <li>
-            <img src="resources/clima.png" class="img-proyecto">
-            <h3>Aplicación del Clima</h3>
-            <p>Aplicación del clima construida con React y weatherapi 
-              para proporcionar información en tiempo real sobre el clima en cualquier lugar del mundo.</p>
-            <ul>
-              <li class="list"><a href="https://github.com/Crossbns/climaApp" target="_blank"><i class="fab fa-github"></i></a></li>
-              <li class="list"><a href="https://weatherapp-8er6.onrender.com" target="_blank"><i class="fas fa-globe"></i></a></li>
-            </ul>
-          </li>
-          <li class="final">
-            <img src="resources/cronos.png" class="img-proyecto">
-            <h3>Temporizador</h3>
-            <p>Aplicación de cronometro desarrollado en ReactJs para medir el tiempo transcurrido desde un punto particular hasta el momento en que se observa.</p>
-            <ul>
-              <li class="list"><a href="https://github.com/Crossbns/cronos" target="_blank"><i class="fab fa-github"></i></a></li>
-              <li class="list"><a href="https://stopwatch-2u76.onrender.com" target="_blank"><i class="fas fa-globe"></i></a></li>
-            </ul>
-          </li>
+    <div>
+      <h2 data-section="skills" data-value="skills-title1">SKILLS</h2>
+      <div class="lang">
+        <h3 data-section="skills" data-value="skills-title2">FROT-END</h3>
+        <ul>
+          <li data-section="skills" data-value="skills-frontend-html"><i class="fab fa-html5" ></i> HTML</li>
+          <li data-section="skills" data-value="skills-frontend-css"><i class="fab fa-css3-alt"></i> CSS</li>
+          <li data-section="skills" data-value="skills-frontend-js"><i class="fab fa-js-square"></i> JavaScript</li>
+          <li data-section="skills" data-value="skills-frontend-react"><i class="fab fa-react"></i> React</li>
+          <li data-section="skills" data-value="skills-frontend-expressjs"><i class="fas fa-server"></i> ExpressJs</li>
+          <li data-section="skills" data-value="skills-frontend-csharp"><i class="fab fa-microsoft"></i> C#</li>
+          <li data-section="skills" data-value="skills-frontend-dotnet"><i class="fas fa-code"></i> .NET</li>
+          <li data-section="skills" data-value="skills-frontend-php"><i class="fab fa-php"></i> PHP</li>
         </ul>
       </div>
-    </section> 
-    
-    
-    
+
+      <div class="db">
+        <h3 data-section="skills" data-value="skills-name">BACK-END</h3>
+        <ul>
+          <li data-section="skills" data-value="skills-backend-mysql"><i class="fas fa-database"></i> MySQL</li>
+          <li data-section="skills" data-value="skills-backend-sqlserver"><i class="fas fa-database"></i> SQL Server</li>
+          <li data-section="skills" data-value="skills-backend-mongodb"><i class="fas fa-database"></i> MongoDB</li>
+          <li data-section="skills" data-value="skills-backend-postgresql"><i class="fas fa-database"></i> PostgreSQL</li>
+        </ul>
+      </div>
+
+      <div class="so">
+        <h3 data-section="skills" data-value="skills-titleos">SISTEMAS</h3>
+        <ul>
+          <li data-section="skills" data-value="skills-os-windows"><i class="fab fa-microsoft"></i> Windows</li>
+          <li data-section="skills" data-value="skills-os-debian"><i class="fab fa-debian"></i> Debian</li>
+          <li data-section="skills" data-value="skills-os-redhat"><i class="fab fa-redhat"></i> Red Hat</li>
+          <li data-section="skills" data-value="skills-os-arch"><i class="fab fa-linux"></i> Arch</li>
+        </ul>
+      </div>
+
+      <div class="ot">
+        <h3 data-section="skills" data-value="skills-titleother">OTROS</h3>
+        <ul>
+          <li data-section="skills" data-value="skills-others-git"><i class="fab fa-git-alt"></i> Git</li>
+          <li data-section="skills" data-value="skills-others-bash"><i class="fas fa-terminal"></i> Bash</li>
+          <li data-section="skills" data-value="skills-others-powershell"><i class="fas fa-terminal"></i> Powershell</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="proyectos" id="proyectos">
+    <div class="port">
+      <h2 data-section="projects" data-value="projects-proyectos">PROYECTOS</h2>
+      <!-- Content for the Proyectos section -->
+      <ul class="container">
+        <li>
+          <img src="resources/prod.png" class="img-proyecto">
+          <h3 data-section="projects" data-value="projects-project1-title">Lista de Tareas</h3>
+          <p data-section="projects" data-value="projects-project1-description">Aplicación MERN de lista de tareas para organizar y gestionar tareas diarias,
+            hábitos y pendientes.</p>
+          <ul>
+            <li class="list"><a href="https://github.com/Crossbns/prodlist" target="_blank"><i
+                  class="fab fa-github"></i></a></li>
+            <li class="list"><a href="https://prodlist-dttg.onrender.com" target="_blank"><i
+                  class="fas fa-globe"></i></a></li>
+          </ul>
+        </li>
+        <li>
+          <img src="resources/clima.png" class="img-proyecto">
+          <h3 data-section="projects" data-value="projects-project2-title">Aplicación del Clima</h3>
+          <p data-section="projects" data-value="projects-project2-description">Aplicación del clima construida con React y weatherapi
+            para proporcionar información en tiempo real sobre el clima en cualquier lugar del mundo.</p>
+          <ul>
+            <li class="list"><a href="https://github.com/Crossbns/climaApp" target="_blank"><i
+                  class="fab fa-github"></i></a></li>
+            <li class="list"><a href="https://weatherapp-8er6.onrender.com" target="_blank"><i
+                  class="fas fa-globe"></i></a></li>
+          </ul>
+        </li>
+        <li class="final">
+          <img src="resources/cronos.png" class="img-proyecto">
+          <h3 data-section="projects" data-value="projects-project3-title">Temporizador</h3>
+          <p data-section="projects" data-value="projects-project3-description">Aplicación de cronometro desarrollado en ReactJs para medir el tiempo transcurrido desde un punto
+            particular hasta el momento en que se observa.</p>
+          <ul>
+            <li class="list"><a href="https://github.com/Crossbns/cronos" target="_blank"><i
+                  class="fab fa-github"></i></a></li>
+            <li class="list"><a href="https://stopwatch-2u76.onrender.com" target="_blank"><i
+                  class="fas fa-globe"></i></a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
 
 
 
-<section class="contacto" id="contacto">
-  <div>
-    <h2>CONTACTO</h2>
-    <ul>
-      <li>
-        <a href="https://wa.me/+584127843556" target="_blank"><i class="fab fa-whatsapp"></i></a>
-      </li>
-      <li>
-        <a href="https://t.me/cemarquez" target="_blank"><i class="fab fa-telegram"></i></a>
-      </li>
-      <li>
-        <a href="https://github.com/Crossbns" target="_blank"><i class="fab fa-github"></i></a>
-      </li>
-      <li>
-        <a href="mailto:cesar.marquesal@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in//césar-leonardo-jesús-márquez-salazar-73ab17167/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </li> 
-    </ul> 
-  </div> 
-</section>
-
-<footer>
-  <div>
-    <p>© 2023 César Márquez. All rights reserved.</p>
-  </div>
-</footer>
 
 
-  </body>
+
+  <section class="contacto" id="contacto">
+    <div>
+      <h2 data-section="contact" data-value="contact-contact">CONTACTO</h2>
+      <ul>
+        <li>
+          <a href="https://wa.me/+584127843556" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </li>
+        <li>
+          <a href="https://t.me/cemarquez" target="_blank"><i class="fab fa-telegram"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/Crossbns" target="_blank"><i class="fab fa-github"></i></a>
+        </li>
+        <li>
+          <a href="mailto:cesar.marquesal@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in//césar-leonardo-jesús-márquez-salazar-73ab17167/" target="_blank"><i
+              class="fab fa-linkedin"></i></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <p>© 2023 César Márquez. All rights reserved.</p>
+    </div>
+  </footer>
+
+<script src="app.js"></script>
+</body>
 
 </html

@@ -1,0 +1,64 @@
+{
+  "sidemenu": {
+    "sidemenu-home": "Inicio",
+    "sidemenu-about": "Sobre Mi",
+    "sidemenu-skills": "Skills",
+    "sidemenu-projects": "Proyectos",
+    "sidemenu-contact": "Contacto",
+    "sidemenu-resume": "Curriculum"
+  },
+
+  "profile": {
+    "profile-name": "César Márquez",
+    "profile-title": "Desarrollador Web & Bilingüe"
+  },
+
+  "about": {
+    "about-title": "SOBRE MI",
+    "about-description": "¡Mucho gusto! Soy un profesional en informática interesado por la tecnología.\nMe desempeño en el desarrollo de software usando habilidades como la resolución de problemas,\nel autoaprendizaje, y la organización para crear código modular y escalable\nen el desarrollo soluciones de software eficientes."
+  },
+
+  "skills": {
+    "skills-title1": "SKILLS",
+    "skills-title2": "FRONT-END",
+    "skills-frontend-html": "HTML",
+    "skills-frontend-css": "CSS",
+    "skills-frontend-js": "JavaScript",
+    "skills-frontend-react": "React",
+    "skills-frontend-expressjs": "ExpressJs",
+    "skills-frontend-csharp": "C#",
+    "skills-frontend-dotnet": ".NET",
+    "skills-frontend-php": "PHP",
+
+    "skills-name": "BACK-END",
+    "skills-backend-mysql": "MySQL",
+    "skills-backend-sqlserver": "SQL Server",
+    "skills-backend-mongodb": "MongoDB",
+    "skills-backend-postgresql": "PostgreSQL",
+
+    "skills-titleos": "OS",
+    "skills-os-windows": "Windows",
+    "skills-os-debian": "Debian",
+    "skills-os-redhat": "Red Hat",
+    "skills-os-arch": "Arch",
+
+    "skills-titleother": "Others",
+    "skills-others-git": "Git",
+    "skills-others-bash": "Bash",
+    "skills-others-powershell": "Powershell"
+  },
+
+  "projects": {
+    "projects-proyectos": "PROYECTOS",
+    "projects-project1-title": "Lista de Tareas",
+    "projects-project1-description": "Aplicación MERN de lista de tareas para organizar y gestionar tareas diarias, hábitos y pendientes.",
+    "projects-project2-title": "Aplicación del Clima",
+    "projects-project2-description": "Aplicación del clima construida con React y weatherapi para proporcionar información en tiempo real sobre el clima en cualquier lugar del mundo.",
+    "projects-project3-title": "Temporizador",
+    "projects-project3-description": "Aplicación de cronometro desarrollado en ReactJs para medir el tiempo transcurrido desde un punto particular hasta el momento en que se observa."
+  },
+
+  "contact": {
+    "contact-contact": "CONTACTO"
+  }
+}
