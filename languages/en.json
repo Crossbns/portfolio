@@ -49,7 +49,7 @@
   },
 
   "projects": {
-    "projects-proyectos": "PROYECTOS",
+    "projects-proyectos": "PROJECTS",
     "projects-project1-title": "Task List",
     "projects-project1-description": "MERN application of task list to organize and manage daily tasks, habits and pending tasks.",
     "projects-project2-title": "Weather Application",
