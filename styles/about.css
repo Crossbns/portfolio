@@ -7,14 +7,19 @@
   margin-left: 0;
   background-size: cover;
   background-color: #000000;
-  color: #FF3131;
   display: flex; /* Add this property to use flexbox */
   flex-direction: column; /* Add this property to align elements vertically */
   justify-content: center; /* Add this property to center elements vertically */
 }
 
+.about .port {
+  margin-bottom: 100px;
+}
+
 .about h2 {
   text-align: center; /* Center the h2 element */
+  color: #F3E600;
+  font-weight: bold;
 }
 
 .about p{
