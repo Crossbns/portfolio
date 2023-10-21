@@ -22,7 +22,7 @@
   border-right: 1px solid #F3E600;
   
   /* Hace el efecto del paralelogramo más sutil */
-  transform: skewY(15deg);
+  transform: skewY(10deg);
   
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
@@ -38,7 +38,7 @@
   padding: 32px;
   
   /* Aplica una transformación inversa al contenido */
-  transform: skewY(-15deg);
+  transform: skewY(-10deg);
 }
 
 .elements a:hover {
