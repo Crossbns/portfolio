@@ -127,9 +127,9 @@ border-radius: 8px;
   .proyectos{
     width: 100%;
   }
+  
   .proyectos div {
-    margin-left: 100px;
-    max-width: 100%;
+    margin-right: 15px;
     margin-bottom: 100px;
   }
   .container{
