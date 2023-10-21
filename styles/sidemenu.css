@@ -1,10 +1,9 @@
 .sidemenu {
   position: fixed; /* Fija el menú en la parte izquierda de la página */
   left: 0;
-  width: 190px; /* Ancho del menú */
+  width: 195px; /* Ancho del menú */
   height: 100%; /* Altura del menú */
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent); /* Añade un degradado que se desvanece hacia la derecha */
-  display: flex; /* Añade flexbox */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent); /* Añade un degradado que se desvanece hacia la derecha */  display: flex; /* Añade flexbox */
   justify-content: center; /* Centra los elementos horizontalmente */
   align-items: center; /* Centra los elementos verticalmente */
 }
@@ -15,33 +14,51 @@
   position: relative; /* Cambia a posición relativa */
   left: -2px; /* Mueve el elemento un poco hacia la izquierda */
   top: -45px; /* Mueve el elemento un poco más hacia arriba */
-  width: 180px; /* Ancho del menú */
-  background-color: rgba(0, 0, 0, 0.7); 
+  width: 165px; /* Ancho del menú */
+  background-color: rgba(0, 0, 0, 0.8); 
   border-top: 1px solid #F3E600;
   border-bottom: 1px solid #F3E600;
   border-left: 1px solid #F3E600;
   border-right: 1px solid #F3E600;
-
+  
+  /* Hace el efecto del paralelogramo más sutil */
+  transform: skewY(15deg);
+  
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-
-
-.sidemenu a {
+.elements a {
   display: block; /* Los enlaces se muestran como bloques, lo que les permite tener padding y dimensiones */
   padding: 25px; /* Espacio alrededor del texto en los enlaces */
   text-decoration: none; /* Elimina el subrayado de los enlaces */
-  font-size: 16px; /* Tamaño del texto en los enlaces */
+  font-size: 14px; /* Tamaño del texto en los enlaces */
   font-weight: bold; /* Texto en negrita en los enlaces */
   color: white; /* Color del texto en los enlaces */
+  
+  padding: 32px;
+  
+  /* Aplica una transformación inversa al contenido */
+  transform: skewY(-15deg);
 }
 
-.sidemenu a:hover {
-  background-color: #F3E600; /* Color de fondo de los enlaces al pasar el mouse sobre ellos */
-  color: #000000;
+.elements a:hover {
+  
+   /* Color de fondo de los enlaces al pasar el mouse sobre ellos */
+   background-color: #F3E600;
+   
+   color: #000000;
+   /* Aplica la misma transformación al estado de "hover" */
+   transform: skewY(0deg);
 }
 
-.sidemenu a i {
-  margin-right: 10px;
+.elements a i:hover {
+  transform: skewY(15deg);
+}
+
+
+.elements a i {
+  margin-right: auto;
+  
 }
 
 .sidemenu .elements {
@@ -80,6 +97,7 @@
     width:auto;
     display:inline-block;
     line-height:50px;
+    transform: skewY(0deg);
 }
 
 .sidemenu .elements a i {
@@ -87,7 +105,7 @@
   position:relative;
   margin-bottom: 20px;
   vertical-align: middle;
-  margin-right: 20px; /* Se aplica a todos los elementos */
+  margin-right: 30px; /* Se aplica a todos los elementos */
 }
 
 .sidemenu a:last-child i {
@@ -110,6 +128,7 @@
   border-bottom: 1px solid;
   border-left: 1px solid;
   border-right: 1px solid;
+  transform: skewY(0deg);
 }
 
 
