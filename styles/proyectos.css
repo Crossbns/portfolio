@@ -127,11 +127,16 @@ border-radius: 8px;
   .proyectos{
     width: 100%;
   }
+  .proyectos div {
+    margin-left: 100px;
+    max-width: 100%;
+    margin-bottom: 100px;
+  }
   .container{
     display: flex;
     flex-direction: column; /* Los elementos hijos se muestran en línea */
     justify-content: center;
-    margin-left: 0;
+    margin-left: -2;
     flex-wrap: wrap;
     width: 100%;
   }
