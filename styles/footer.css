@@ -14,7 +14,7 @@ footer {
   text-align: center;
   margin-left: 0;
   background-size: cover;
-
+  background-color: #F3E600;
   display: flex;
   /* Add this property to use flexbox */
   flex-direction: column;
