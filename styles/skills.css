@@ -4,7 +4,7 @@
   width: 100%;
   margin-left: 0;
   background-size: cover;
-  background-color: #F3E600;
+  background-color: #000000;
   align-items: center;
   display: flex; /* Add this property to use flexbox */
   flex-direction: column; /* Add this property to align elements vertically */
@@ -12,7 +12,7 @@
 }
 
 .skills .port{
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 
 .skills div{
@@ -26,7 +26,7 @@
 
 .skills h2 {
   margin-left: 100px;
-  color: #000000;
+  color: #F3E600;
   display:inline-block;
   text-align:center;
   font-weight: bold;
@@ -35,7 +35,7 @@
 .skills h3{
   font-size: 24px;
   margin-bottom: 10px;
-  color: #000000;
+  color: white;
   font-weight:bold;
   text-align: center; /* Centra el texto de los elementos h3 */
 }
@@ -57,7 +57,7 @@ font-size: 16px;
 margin-right: 20px;
 background-color: #F3E600;
 text-align: center;
-border: 1px solid #000000;
+border: 1px solid #F3E600;
 border-radius: 4px;
 padding: 10px;
 margin-bottom: 10px;

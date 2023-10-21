@@ -25,7 +25,7 @@
   text-align: center;
   margin-left: 0;
   background-size: cover;
-  background-color: #000000;
+  background-color: #F3E600;
   display: flex; /* Add this property to use flexbox */
   flex-direction: column; /* Add this property to align elements vertically */
   justify-content: center; /* Add this property to center elements vertically */
@@ -37,7 +37,7 @@
 
 .inicio h2 {
   text-align: center; /* Center the h2 element */
-  color: #F3E600;
+  color: #000000;
   font-size: 60px;
   font-weight: bold;
 }
@@ -47,7 +47,7 @@
   align-items:center;
   font-size:24px;
   line-height:1.5;
-  color: white;
+  color: #000000;
 }
 
 .inicio div {

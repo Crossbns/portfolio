@@ -5,7 +5,7 @@
   width: 100%;
   margin-left: 0;
   background-size: cover;
-  background-color: #F3E600;
+  background-color: #000000;
   align-items: center;
   display: flex; /* Add this property to use flexbox */
   flex-direction: column; /* Add this property to align elements vertically */
@@ -24,13 +24,13 @@
   align-items: center;
   text-align: center;
   font-weight: bold;
-  color: #000000;
+  color: #F3E600;
 }
 
 .proyectos .adv {
   align-items: center;
   text-align: center;
-  color: #000000;
+  color: white;
   font-size: 16px;
   font-weight: bold;
 }
@@ -52,7 +52,6 @@
 
 
 .proyectos .container {
-  background-color: #000000;
   width: 100%;
   list-style: none;
   margin-top: 20px;
@@ -119,7 +118,7 @@ border-radius: 8px;
 .proyectos h3 {
   margin-top: 20px;
   font-size: 24px;
-  color: #000000; /* Change the text color to white */
+  color: #F3E600; /* Change the text color to white */
 }
 
 @media  only screen and (max-width: 900px), only screen and (max-width: 600px) {
