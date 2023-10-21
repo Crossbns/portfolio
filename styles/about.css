@@ -67,7 +67,7 @@
   }
   
   .about p{
-      font-size:20px; /* Reduce the font size on medium screens */
+      font-size:16px; /* Reduce the font size on medium screens */
       word-spacing:normal; /* Reset word spacing on medium screens */
   }
   }
