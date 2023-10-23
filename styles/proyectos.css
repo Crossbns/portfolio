@@ -13,11 +13,7 @@
   box-sizing: border-box;
 }
 
-.container{
-  border: 4px solid #000000;
-  margin-bottom: 10px;
 
-}
 
 
 .proyectos h2 {
@@ -60,6 +56,8 @@
   flex-wrap: nowrap; /* Prevent elements from wrapping into multiple rows */
   padding: 0;
   margin-left: 0;
+  border: 4px solid #000000;
+  margin-bottom: 100px;
 }
 
 .elem {
@@ -68,6 +66,26 @@
   padding: 20px;
   text-align: center;
   font-weight: bold;
+  background-color: #F3E600;
+}
+
+.elem:hover {
+  background-color: #000000;
+}
+
+.elem:hover h3 {
+  color: #F3E600;
+}
+
+.elem:hover p {
+  color: white;
+}
+
+.elem:hover a {
+  color: #000000;
+}
+
+.elem:hover li {
   background-color: #F3E600;
 }
 
@@ -101,8 +119,6 @@
 .proyectos a {
 color:#F3E600;
 align-items:center;
-
-/* Adjust the shape of the links here */
 }
 
 .img-proyecto {
@@ -115,10 +131,11 @@ margin-right:auto;
 border-radius: 8px;
 }
 
-.proyectos h3 {
+.elem h3 {
   margin-top: 20px;
   font-size: 24px;
-  color: #F3E600; /* Change the text color to white */
+  color: #000000; /* Change the text color to white */
+  font-weight: bold;
 }
 
 @media  only screen and (max-width: 900px), only screen and (max-width: 600px) {
