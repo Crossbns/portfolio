@@ -98,16 +98,21 @@ footer div {
 
   .contacto {
     width: 100%;
-    height:auto;
-    margin-left:0; /* Reset the left margin */
-    margin-left:auto; /* Center the div on small screens */
-    margin-right:auto; /* Center the div on small screens */
-}
+    height: auto;
+    margin-left: 0;
+    /* Reset the left margin */
+    margin-left: auto;
+    /* Center the div on small screens */
+    margin-right: auto;
+    /* Center the div on small screens */
+  }
 
 
-  .contacto p{
-    font-size:18px; /* Reduce the font size on small screens */
-    word-spacing:normal; /* Reset word spacing on small screens */
+  .contacto p {
+    font-size: 18px;
+    /* Reduce the font size on small screens */
+    word-spacing: normal;
+    /* Reset word spacing on small screens */
   }
 }
 
@@ -126,15 +131,20 @@ footer div {
 
   .contacto {
     width: 100%;
-    height:auto;
-    margin-left:0; /* Reset the left margin */
-    margin-left:auto; /* Center the div on medium screens */
-    margin-right:auto; /* Center the div on medium screens */
-}
+    height: auto;
+    margin-left: 0;
+    /* Reset the left margin */
+    margin-left: auto;
+    /* Center the div on medium screens */
+    margin-right: auto;
+    /* Center the div on medium screens */
+  }
 
-.contacto p{
-    font-size:20px; /* Reduce the font size on medium screens */
-    word-spacing:normal; /* Reset word spacing on medium screens */
-}
+  .contacto p {
+    font-size: 20px;
+    /* Reduce the font size on medium screens */
+    word-spacing: normal;
+    /* Reset word spacing on medium screens */
+  }
 
 }
