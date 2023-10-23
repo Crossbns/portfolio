@@ -40,7 +40,6 @@
   color: white;
   font-weight: bold;
   text-align: center;
-  /* Centra el texto de los elementos h3 */
 }
 
 .skills ul {
@@ -51,7 +50,6 @@
   margin: 0;
   padding: 0;
   justify-content: center;
-  /* Add this property to center the elements horizontally */
 }
 
 
@@ -87,7 +85,7 @@
   margin-left: 0;
 }
 
-/* Estilos para pantallas pequeñas */
+
 @media (max-width: 600px) {
   .skills {
     flex-direction: column;

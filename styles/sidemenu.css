@@ -1,114 +1,70 @@
 .sidemenu {
   position: fixed;
-  /* Fija el menú en la parte izquierda de la página */
   left: 0;
   width: 195px;
-  /* Ancho del menú */
   height: 100%;
-  /* Altura del menú */
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
-  /* Añade un degradado que se desvanece hacia la derecha */
   display: flex;
-  /* Añade flexbox */
   justify-content: center;
-  /* Centra los elementos horizontalmente */
   align-items: center;
-  /* Centra los elementos verticalmente */
 }
-
-
 
 .elements {
   position: relative;
-  /* Cambia a posición relativa */
   left: -2px;
-  /* Mueve el elemento un poco hacia la izquierda */
   top: -45px;
-  /* Mueve el elemento un poco más hacia arriba */
-  width: 165px;
-  /* Ancho del menú */
+  width: 175px;
   background-color: rgba(0, 0, 0, 0.8);
   border-top: 1px solid #F3E600;
   border-bottom: 1px solid #F3E600;
   border-left: 1px solid #F3E600;
   border-right: 1px solid #F3E600;
-
-  /* Hace el efecto del paralelogramo más sutil */
-  transform: skewY(10deg);
-
+  border-radius:2px;
+  transform: skewY(7deg);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .elements a {
   display: block;
-  /* Los enlaces se muestran como bloques, lo que les permite tener padding y dimensiones */
   padding: 25px;
-  /* Espacio alrededor del texto en los enlaces */
   text-decoration: none;
-  /* Elimina el subrayado de los enlaces */
   font-size: 14px;
-  /* Tamaño del texto en los enlaces */
   font-weight: bold;
-  /* Texto en negrita en los enlaces */
   color: white;
-  /* Color del texto en los enlaces */
-
   padding: 32px;
-
-  /* Aplica una transformación inversa al contenido */
-  transform: skewY(-10deg);
+  transform: skewY(-7deg);
 }
 
 .elements a:hover {
-
-  /* Color de fondo de los enlaces al pasar el mouse sobre ellos */
-  background-color: #F3E600;
-
-  color: #000000;
-  /* Aplica la misma transformación al estado de "hover" */
-  transform: skewY(0deg);
-}
-
-.elements a i:hover {
-  transform: skewY(15deg);
+  color: #F3E600;
+  color: #F3E600;
 }
 
 
 .elements a i {
   margin-right: auto;
-
 }
 
 .sidemenu .elements {
   margin-top: 100px;
-  /* Agregar margen superior */
 }
 
-/* Estilos para pantallas pequeñas */
+
 @media (max-width: 600px),
 (max-width: 900px) {
   .sidemenu {
     margin-bottom: 0;
     width: auto;
-    /* El menú ocupa todo el ancho de la pantalla */
     height: auto;
     display: flex;
-    /* Los elementos del menú se muestran en una línea */
     transition: transform .3s ease-in-out;
-    /* Transición suave al cambiar el tamaño de la pantalla */
     flex-direction: row;
     position: fixed;
-    /* El menú se fija en la parte inferior de la página */
     height: 50px;
-    /* Altura del menú */
     bottom: 0;
-    /* El menú se posiciona en la parte inferior de la página */
     flex-direction: row;
-    /* Los elementos del menú se alinean horizontalmente */
     align-items: center;
-    /* Centra los elementos del menú verticalmente */
     justify-content: space-around;
-    /* Los elementos del menú se distribuyen uniformemente a lo largo de la línea */
   }
 
   .sidemenu.open {
@@ -119,9 +75,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
-    /* Ajusta el padding a tu preferencia */
     text-align: center;
-    /* Centra el texto */
     border-top: none;
     border-bottom: none;
     border-right: none;
@@ -137,18 +91,15 @@
     margin-bottom: 20px;
     vertical-align: middle;
     margin-right: 30px;
-    /* Se aplica a todos los elementos */
   }
 
   .sidemenu a:last-child i {
     margin-right: 0;
-    /* Se elimina para el último elemento */
   }
 
 
   .elements {
     box-sizing: border-box;
-    /* Includes padding and border in element's total width and height */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,7 +107,6 @@
     left: -2px;
     top: -45px;
     width: 100vw;
-    /* Makes the element span the entire width of the viewport */
     height: auto;
     background-color: #000000;
     border-top: 1px solid;
@@ -165,10 +115,6 @@
     border-right: 1px solid;
     transform: skewY(0deg);
   }
-
-
-
-
   .menu-text {
     display: none;
   }

@@ -7,11 +7,8 @@
   background-size: cover;
   background-color: #F3E600;
   display: flex;
-  /* Add this property to use flexbox */
   flex-direction: column;
-  /* Add this property to align elements vertically */
   justify-content: center;
-  /* Add this property to center elements vertically */
 }
 
 .about .port {
@@ -20,7 +17,6 @@
 
 .about h2 {
   text-align: center;
-  /* Center the h2 element */
   color: #000000;
   font-weight: bold;
 }
@@ -37,50 +33,21 @@
 }
 
 /* Estilos para pantallas pequeñas */
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px), only screen and (max-width: 900px) {
 
   .about {
     width: 100%;
     height: auto;
     margin-left: 0;
-    /* Reset the left margin */
   }
 
   .about div {
     margin-left: auto;
-    /* Center the div on small screens */
     margin-right: auto;
-    /* Center the div on small screens */
   }
 
   .about p {
     font-size: 18px;
-    /* Reduce the font size on small screens */
     word-spacing: normal;
-    /* Reset word spacing on small screens */
-  }
-}
-
-@media only screen and (max-width: 900px) {
-
-  .about {
-    width: 100%;
-    height: auto;
-    margin-left: 0;
-    /* Reset the left margin */
-  }
-
-  .about div {
-    margin-left: auto;
-    /* Center the div on medium screens */
-    margin-right: auto;
-    /* Center the div on medium screens */
-  }
-
-  .about p {
-    font-size: 16px;
-    /* Reduce the font size on medium screens */
-    word-spacing: normal;
-    /* Reset word spacing on medium screens */
   }
 }

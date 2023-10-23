@@ -16,13 +16,9 @@ footer {
   background-size: cover;
   background-color: #000000;
   display: flex;
-  /* Add this property to use flexbox */
   flex-direction: column;
-  /* Add this property to align elements vertically */
   justify-content: center;
-  /* Add this property to center elements vertically */
   margin-left: 100px;
-  /* Center the div */
   max-width: 100%;
 
 }
@@ -43,14 +39,11 @@ footer {
   text-align: center;
   align-items: center;
   justify-content: center;
-  /* Add this property to center the elements horizontally */
 }
 
 .contacto li {
   margin-right: auto;
-  /* Center the li elements */
   margin-left: auto;
-  /* Center the li elements */
 }
 
 .contacto a {
@@ -67,7 +60,6 @@ footer .container {
   max-width: 100%;
   width: 100%;
   margin: auto;
-  /* Center the container */
 }
 
 footer p {
@@ -78,12 +70,9 @@ footer p {
 footer div {
   margin-top: 20px;
   margin-left: 200px;
-  /* Center the div */
 }
 
 
-
-/* Estilos para pantallas pequeñas */
 @media (max-width:600px) {
   footer {
     margin-bottom: 65px;
@@ -91,28 +80,21 @@ footer div {
 
   footer div {
     margin-left: auto;
-    /* Center the div on small screens */
     margin-right: auto;
-    /* Center the div on small screens */
   }
 
   .contacto {
     width: 100%;
     height: auto;
     margin-left: 0;
-    /* Reset the left margin */
     margin-left: auto;
-    /* Center the div on small screens */
     margin-right: auto;
-    /* Center the div on small screens */
   }
 
 
   .contacto p {
     font-size: 18px;
-    /* Reduce the font size on small screens */
     word-spacing: normal;
-    /* Reset word spacing on small screens */
   }
 }
 
@@ -124,27 +106,20 @@ footer div {
 
   footer div {
     margin-left: auto;
-    /* Center the div on medium screens */
     margin-right: auto;
-    /* Center the div on medium screens */
   }
 
   .contacto {
     width: 100%;
     height: auto;
     margin-left: 0;
-    /* Reset the left margin */
     margin-left: auto;
-    /* Center the div on medium screens */
     margin-right: auto;
-    /* Center the div on medium screens */
   }
 
   .contacto p {
     font-size: 20px;
-    /* Reduce the font size on medium screens */
-    word-spacing: normal;
-    /* Reset word spacing on medium screens */
+    word-spacing: normal; 
   }
 
 }

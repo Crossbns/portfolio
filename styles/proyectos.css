@@ -5,9 +5,9 @@
   background-size: cover;
   background-color: #000000;
   align-items: center;
-  display: flex; /* Add this property to use flexbox */
-  flex-direction: column; /* Add this property to align elements vertically */
-  justify-content: center; /* Add this property to center elements vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   box-sizing: border-box;
 }
 
@@ -26,9 +26,9 @@
 }
 
 .proyectos li ul {
-  display: flex; /* Los elementos hijos se muestran en línea */
-  justify-content: center; /* Centra los elementos horizontalmente */
-  align-items: center; /* Centra los elementos verticalmente */
+  display: flex;
+  justify-content: center; 
+  align-items: center;
 }
 
 .proyectos p {
@@ -37,7 +37,7 @@
 }
 
 .proyectos li li {
-  display: inline-block; /* Los elementos se muestran en línea */
+  display: inline-block;
   margin-right: 20px;
   font-size: 28px;
   width: 60px;
@@ -52,11 +52,11 @@
 }
 
 .img-proyecto {
-  width: 500px; /* Adjust the image width */
-  height: 200px; /* Adjust the image height */
+  width: 500px; 
+  height: 200px; 
   display: block;
-  max-width: 100%; /* Ensure that the image is not wider than its container */
-  margin-left: auto; /* Center the image horizontally */
+  max-width: 100%; 
+  margin-left: auto; 
   margin-right: auto;
   border-radius: 8px;
 }
@@ -86,8 +86,8 @@
   list-style: none;
   margin-top: 20px;
   margin-bottom: 20px;
-  display: flex; /* Use flexbox to align elements horizontally */
-  flex-wrap: nowrap; /* Prevent elements from wrapping into multiple rows */
+  display: flex;
+  flex-wrap: nowrap;
   padding: 0;
   margin-left: 0;
   border: 4px solid #000000;
@@ -127,6 +127,7 @@
   margin-right: 0;
 }
 
+
 @media only screen and (max-width: 900px), only screen and (max-width: 600px) {
   .proyectos {
     width: 100%;
@@ -138,7 +139,7 @@
   }
   .container {
     display: flex;
-    flex-direction: column; /* Los elementos hijos se muestran en línea */
+    flex-direction: column;
     justify-content: center;
     margin-left: -2;
     flex-wrap: wrap;
@@ -156,8 +157,7 @@
   }
 
   .proyectos .elem {
-    width: 100%; /* Adjust the width */
-    /* Add any other styles you want to change */
+    width: 100%;
   }
 
   .proyectos-container {
@@ -165,7 +165,7 @@
   }
 
   .img-proyecto {
-    width: 100%; /* Adjust the image width */
-    height: auto; /* Adjust the image height */
+    width: 100%;
+    height: auto;
   }
 }
