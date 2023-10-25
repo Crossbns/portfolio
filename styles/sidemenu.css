@@ -14,15 +14,20 @@
   left: -2px;
   top: -45px;
   width: 175px;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-top: 1px solid #F3E600;
-  border-bottom: 1px solid #F3E600;
-  border-left: 1px solid #F3E600;
-  border-right: 1px solid #F3E600;
-  border-radius:2px;
-  transform: skewY(7deg);
+  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo negro con transparencia */
+  border: 2px solid #F3E600;
+  border-radius:8px;
+  transform: skewY(15deg);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  
+  /* Añade estas líneas */
+  backdrop-filter: blur(20px);
 }
+
+.elements p {
+  transform: skewY(-15deg);
+}
+
 
 .elements a {
   display: block;
@@ -31,14 +36,18 @@
   font-size: 14px;
   font-weight: bold;
   color: white;
-  padding: 32px;
-  transform: skewY(-7deg);
+  padding: 25px;
+  transform: skewY(0deg);
 }
 
 .elements a:hover {
-  color: #F3E600;
-  color: #F3E600;
+  background-color: #F3E600;
 }
+
+.elements a:hover p {
+  color: #000000;
+}
+
 
 
 .elements a i {
@@ -82,7 +91,7 @@
     width: auto;
     display: inline-block;
     line-height: 50px;
-    transform: skewY(0deg);
+    transform: skewY(15deg);
   }
 
   .sidemenu .elements a i {
