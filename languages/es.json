@@ -1,11 +1,11 @@
 {
   "sidemenu": {
-    "sidemenu-home": "Inicio",
-    "sidemenu-about": "Sobre Mi",
-    "sidemenu-skills": "Skills",
-    "sidemenu-projects": "Proyectos",
-    "sidemenu-contact": "Contacto",
-    "sidemenu-resume": "Curriculum"
+    "sidemenu-home": " Inicio",
+    "sidemenu-about": " Sobre Mi",
+    "sidemenu-skills": " Skills",
+    "sidemenu-projects": " Proyectos",
+    "sidemenu-contact": " Contacto",
+    "sidemenu-resume": " Curriculum"
   },
 
   "profile": {
