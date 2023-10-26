@@ -50,7 +50,7 @@
 
   "projects": {
     "projects-proyectos": "PROJECTS",
-    "projects-adv": "Due to inactivity, the server deployed on a free platform causes an initial 20-second delay in the task app.",
+    "projects-adv": "(Due to inactivity, the server deployed on a free platform causes an initial 20-second delay in the task app.)",
     "projects-project1-title": "Task List",
     "projects-project1-description": "MERN application of task list to organize and manage daily tasks, habits and pending tasks.",
     "projects-project2-title": "Weather Application",

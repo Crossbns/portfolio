@@ -50,7 +50,7 @@
 
   "projects": {
     "projects-proyectos": "PROYECTOS",
-    "projects-adv": "Debido a la inactividad, el servidor desplegado en una plataforma gratuita provoca un retraso inicial de 20 segundos en la aplicación de tareas.",
+    "projects-adv": "(Debido a la inactividad, el servidor desplegado en una plataforma gratuita provoca un retraso inicial de 20 segundos en la aplicación de tareas.)",
     "projects-project1-title": "Lista de Tareas",
     "projects-project1-description": "Aplicación MERN de lista de tareas para organizar y gestionar tareas diarias, hábitos y pendientes.",
     "projects-project2-title": "Aplicación del Clima",
