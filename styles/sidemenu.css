@@ -93,6 +93,7 @@
     display: inline-block;
     line-height: 50px;
     transform: skewY(15deg);
+    border-radius: 0px;
 
   }
 
@@ -117,7 +118,7 @@
     position: relative;
     left: -2px;
     top: -45px;
-    width: 100%;
+    width: 100vw;
     height: auto;
     background-color: #000000;
     border-top: 1px solid;
@@ -125,6 +126,7 @@
     border-left: 1px solid;
     border-right: 1px solid;
     transform: skewY(0deg);
+    border-radius: 0;
   }
   .menu-text {
     display: none;
