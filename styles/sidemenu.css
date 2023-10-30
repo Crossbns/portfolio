@@ -74,7 +74,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    border-radius: 0px;
+    border: none;
   }
 
   .sidemenu.open {
