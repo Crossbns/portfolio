@@ -74,6 +74,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    border-radius: 0px;
   }
 
   .sidemenu.open {
@@ -92,10 +93,11 @@
     display: inline-block;
     line-height: 50px;
     transform: skewY(15deg);
+
   }
 
   .sidemenu .elements a i {
-    font-size: 16px;
+    font-size: 20px;
     position: relative;
     margin-bottom: 20px;
     vertical-align: middle;
