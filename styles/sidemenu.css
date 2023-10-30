@@ -63,17 +63,18 @@
 (max-width: 900px) {
   .sidemenu {
     margin-bottom: 0;
-    width: auto;
+    width: 100%;
     height: auto;
     display: flex;
     transition: transform .3s ease-in-out;
     flex-direction: row;
-
+    position: fixed;
     height: 50px;
     bottom: 0;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    border-radius: 0px;
   }
 
   .sidemenu.open {
@@ -115,15 +116,13 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    left: -2px;
+    left: 0px;
+    right: 0px;
     top: -45px;
-    width: 100vw;
+    width: 100%;
     height: auto;
     background-color: #000000;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    border-left: 1px solid;
-    border-right: 1px solid;
+    border: none;
     transform: skewY(0deg);
     border-radius: 0;
   }
