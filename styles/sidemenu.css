@@ -63,12 +63,12 @@
 (max-width: 900px) {
   .sidemenu {
     margin-bottom: 0;
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     transition: transform .3s ease-in-out;
     flex-direction: row;
-    position: fixed;
+
     height: 50px;
     bottom: 0;
     flex-direction: row;
