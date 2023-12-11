@@ -1,6 +1,8 @@
+// Elementos del DOM
 const flagsElement = document.getElementById("flags");
 const textsToChange = document.querySelectorAll("[data-section]");
 
+// Cambiar el idioma
 const changeLanguage = async (language) => {
     const requestJson = await fetch(`./languages/${language}.json`);
     const texts = await requestJson.json();
@@ -12,6 +14,24 @@ const changeLanguage = async (language) => {
     }
 }
 
+// Cambiar el tema
+function cambiarTema() {
+    const temaActual = document.documentElement.getAttribute('data-theme');
+    const nuevoTema = temaActual === 'oscuro' ? 'claro' : 'oscuro';
+    document.documentElement.setAttribute('data-theme', nuevoTema);
+
+    let icono = document.getElementById("iconoTema");
+    icono.classList.toggle("fa-sun");
+    icono.classList.toggle("fa-moon");
+}
+
+// Cambiar el idioma
+function cambiarIdioma() {
+    var boton = document.getElementById("textoIdioma");
+    boton.innerHTML = boton.innerHTML === "ES" ? "EN" : "ES";
+}
+
+// Eventos
 document.getElementById("flags").addEventListener("click", function() {
     let language = document.getElementById("flags").innerHTML;
     changeLanguage(language.toLowerCase());
@@ -25,27 +45,4 @@ window.onscroll = function() {
     var scrollPosY = window.pageYOffset | document.body.scrollTop;
     var gradientValue = Math.min(0.5, scrollPosY/100);
     document.querySelector('.sidemenu').style.background = `linear-gradient(to bottom, rgba(0, 0, 0, ${gradientValue}), transparent)`;
-  }
-
-  function cambiarTema() {
-    const temaActual = document.documentElement.getAttribute('data-theme');
-    const nuevoTema = temaActual === 'oscuro' ? 'claro' : 'oscuro';
-    document.documentElement.setAttribute('data-theme', nuevoTema);
-    let icono = document.getElementById("iconoTema");
-    if (icono.classList.contains("fa-sun")) {
-        icono.classList.remove("fa-sun");
-        icono.classList.add("fa-moon");
-    } else {
-        icono.classList.remove("fa-moon");
-        icono.classList.add("fa-sun");
-    }
-  }
-
-  function cambiarIdioma() {
-    var boton = document.getElementById("textoIdioma");
-    if (boton.innerHTML === "ES") {
-        boton.innerHTML = "EN";
-    } else {
-        boton.innerHTML = "ES";
-    }
 }
