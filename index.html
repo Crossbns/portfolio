@@ -32,15 +32,11 @@
       <a href="#contacto"><p><i class="fa-solid fa-phone"></i><span class="menu-text" data-section="sidemenu" data-value="sidemenu-contact"> Contacto</span></p></a>
       <a href="https://drive.google.com/file/d/1NpaT_tPxVjnEqzQRxL9i82nurC36fMWD/view?usp=sharing" target="_blank"><p><i class="fa-solid fa-download"></i><span class="menu-text" data-section="sidemenu" data-value="sidemenu-resume">Curriculum</span></p></a>
       <div id="flags" class="flags">
-        <div class="flags_item" data-language="es">
-          <p>ES</p>
-        </div>
-    
-        <div class="flags_item" data-language="en">
-          <p>EN</p>
+        <div class="flags_item" data-language="es" id="botonIdioma" onclick="cambiarIdioma()">
+          <p id="textoIdioma">ES</p>
         </div>
       </div>
-      <button onclick="cambiarTema()"><i class="fa-solid fa-sun"></i></button>
+      <button id="botonTema" onclick="cambiarTema()"><i id="iconoTema" class="fas fa-moon"></i></button>
     </div>
   </div>
   

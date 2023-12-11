@@ -5,18 +5,24 @@ const changeLanguage = async (language) => {
     const requestJson = await fetch(`./languages/${language}.json`);
     const texts = await requestJson.json();
 
-    // Cambia el nombre de la variable a textElement
     for (const textElement of textsToChange) {
-        
         const section = textElement.dataset.section;
         const value = textElement.dataset.value;
-
-        // Usa textElement en lugar de textsToChange
-        textElement.innerHTML=texts[section][value];
-
+        textElement.innerHTML = texts[section][value];
     }
-    
-};
+
+    var boton = document.getElementById("botonIdioma");
+    if (boton.innerHTML === "ES") {
+        boton.innerHTML = "EN";
+    } else {
+        boton.innerHTML = "ES";
+    }
+}
+
+document.getElementById("botonIdioma").addEventListener("click", function() {
+    let language = document.getElementById("botonIdioma").innerHTML;
+    changeLanguage(language.toLowerCase());
+});
 
 flagsElement.addEventListener("click", (e) => {
     changeLanguage(e.target.parentElement.dataset.language);
@@ -29,7 +35,24 @@ window.onscroll = function() {
   }
 
   function cambiarTema() {
+    var icono = document.getElementById("iconoTema");
+    if (icono.classList.contains("fa-sun")) {
+        icono.classList.remove("fa-sun");
+        icono.classList.add("fa-moon");
+    } else {
+        icono.classList.remove("fa-moon");
+        icono.classList.add("fa-sun");
+    }
     const temaActual = document.documentElement.getAttribute('data-theme');
     const nuevoTema = temaActual === 'oscuro' ? 'claro' : 'oscuro';
     document.documentElement.setAttribute('data-theme', nuevoTema);
   }
+
+  function cambiarIdioma() {
+    var boton = document.getElementById("botonIdioma");
+    if (boton.innerHTML === "ES") {
+        boton.innerHTML = "EN";
+    } else {
+        boton.innerHTML = "ES";
+    }
+}

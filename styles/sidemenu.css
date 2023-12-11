@@ -68,11 +68,9 @@
 
 /*Banderas*/
 .flags {
-  width: 90px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: 10px;
 }
 
 .flags_item {
@@ -96,8 +94,10 @@
   margin: auto;
   padding: 10px;
   font-weight: bold;
-
+  min-width: 20px; /* Ancho mínimo */
+  text-align: center; /* Alineación del texto al centro */
 }
+
 
 
 
