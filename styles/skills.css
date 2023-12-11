@@ -1,16 +1,15 @@
+
+
 /* Estilos para la sección de skills */
 .skills {
   width: 100%;
-
   background-size: cover;
-  background-color: #000000;
+  background-color: var(--skills-fondo);
+  color: var(--skills-texto);
   align-items: center;
   display: flex;
-  /* Add this property to use flexbox */
   flex-direction: column;
-  /* Add this property to align elements vertically */
   justify-content: center;
-  /* Add this property to center elements vertically */
 }
 
 .skills .port {
@@ -26,7 +25,7 @@
 }
 
 .skills h2 {
-  color: #F3E600;
+  color: var(--skills-texto);
   display: inline-block;
   text-align: center;
   font-weight: bold;
@@ -35,7 +34,7 @@
 .skills h3 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: white;
+  color: var(--skills-texto);
   font-weight: bold;
   text-align: center;
 }
@@ -50,24 +49,20 @@
   justify-content: center;
 }
 
-
-
 .skills li {
   font-size: 16px;
   margin-right: 20px;
-  background-color: #F3E600;
+  background-color: var(--skills-fondo2);
   text-align: center;
-  border: 1px solid #F3E600;
+  border: 1px solid var(--skills-fondo2);
   border-radius: 4px;
   padding: 10px;
   margin-bottom: 10px;
   width: 150px;
   height: 40px;
-  color: #000000;
+  color: var(--skills-texto2);
   font-weight: bold;
 }
-
-
 
 .skills .skills-container div {
   margin: 10px;
@@ -82,6 +77,7 @@
   flex-direction: column;
   margin-left: 0;
 }
+
 
 
 @media (max-width: 600px) {

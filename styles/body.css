@@ -1,7 +1,65 @@
+:root {
+  --sidemenu-fondo: #F3E600;
+  --sidemenu-fondo2: #000000;
+  --sidemenu-texto: #000000;
+  --sidemenu-texto2: #ffffff;
+  --inicio-fondo: #ffffff;
+  --acerca-fondo: #ffffff;
+  --skills-fondo: #F3E600;
+  --skills-fondo2: #000000;
+  --skills-texto: #000000;
+  --skills-texto2: #ffffff;
+  --project-fondo: #ffffff;
+  --project-fondo2: #000000;
+  --project-fondo3: #F3E600;
+  --project-texto: #ffffff;
+  --project-texto2: #000000;
+  --project-texto3: #F3E600;
+  --project-texto4: #000000;
+  --contacto-fondo: #F3E600;
+  --contacto-fondo2: #000000;
+  --contacto-texto: #000000;
+  --contacto-texto2: #ffffff;
+  --contacto-texto3: #000000;
+  --color-texto: #000000;
+  --boton-texto: #000000;
+  --boton-texto2: #ffffff;
+}
+
+[data-theme="oscuro"] {
+  --sidemenu-fondo: #000000;
+  --sidemenu-fondo2: #F3E600;
+  --sidemenu-texto: #ffffff;
+  --sidemenu-texto2: #000000;
+  --inicio-fondo: #F3E600;
+  --acerca-fondo: #F3E600;
+  --skills-fondo: #000000;
+  --skills-fondo2: #F3E600;;
+  --skills-texto: #ffffff;
+  --skills-texto2: #000000;
+  --project-fondo: #000000;
+  --project-fondo2: #F3E600;
+  --project-fondo3: #000000;
+  --project-texto: #000000;
+  --project-texto2: #ffffff;
+  --project-texto3: #000000;
+  --project-texto4: #F3E600;
+  --contacto-fondo: #000000;
+  --contacto-fondo2: #000000;
+  --contacto-texto: #ffffff;
+  --contacto-texto2: #000000;
+  --contacto-texto3: #F3E600;
+  --color-texto: #000000;
+  --boton-texto: #ffffff;
+  --boton-texto2: #F3E600;
+}
+
+
 @font-face {
   font-family: 'Hack Nerd Font';
   src: local('Hack Nerd Font'), url('../public/Hack/HackNerdFontMono-Regular.ttf') format('truetype');
 }
+
 
 body {
   font-family: 'Hack Nerd Font', sans-serif;

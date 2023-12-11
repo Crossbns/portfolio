@@ -1,11 +1,13 @@
-/* Estilos para la sección de sobre mi */
+
+
+/* Estilos de la sección acerca */
 .about {
   width: 100%;
   align-items: center;
   text-align: center;
   margin-left: 0;
   background-size: cover;
-  background-color: #F3E600;
+  background-color: var(--acerca-fondo);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,24 +19,25 @@
 
 .about h2 {
   text-align: center;
-  color: #000000;
+  color: var(--color-texto);
   font-weight: bold;
 }
+
 .about p {
   max-width: 50%; /* Limita el ancho al 50% del contenedor */
   margin: auto; /* Centra el bloque en el contenedor */
   justify-content: center;
   font-size: 24px;
   line-height: 1.5;
-  color: #000000;
+  color: var(--color-texto);
   text-align: center;
 }
-
 
 .inicio div {
   justify-content: center; /* Centra los elementos hijos horizontalmente */
   align-items: center; /* Centra los elementos hijos verticalmente */
 }
+
 
 
 /* Estilos para pantallas pequeñas */

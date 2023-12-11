@@ -1,17 +1,15 @@
 
-
-/*Estilos de inicio*/
+/* Estilos de inicio */
 .inicio {
   width: 100%;
   align-items: center;
   text-align: center;
   margin-left: 0;
   background-size: cover;
-  background-color: #F3E600;
+  background-color: var(--inicio-fondo);
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .inicio .port {
@@ -21,7 +19,7 @@
 
 .inicio h2 {
   text-align: center;
-  color: #000000;
+  color: var(--color-texto);
   font-size: 60px;
   font-weight: bold;
 }
@@ -31,14 +29,13 @@
   align-items: center;
   font-size: 24px;
   line-height: 1.5;
-  color: #000000;
+  color: var(--color-texto);
 }
 
 .inicio div {
   justify-content: center; /* Centra los elementos hijos horizontalmente */
   align-items: center; /* Centra los elementos hijos verticalmente */
 }
-
 
 
 @media only screen and (max-width: 600px), only screen and (max-width: 900px){

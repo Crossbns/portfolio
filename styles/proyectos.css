@@ -1,10 +1,10 @@
+
 /* Styles for the projects section */
 .proyectos {
   width: 100%;
   background-size: cover;
-  background-color: #000000;
+  background-color: var(--project-fondo);
   align-items: center;
-
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
@@ -14,13 +14,13 @@
   align-items: center;
   text-align: center;
   font-weight: bold;
-  color: #f3e600;
+  color: var(--project-texto2);
 }
 
 .elem h3 {
   margin-top: 20px;
   font-size: 24px;
-  color: #000000; /* Changed the text color to white */
+  color: var(--project-texto); /* Changed the text color to white */
   font-weight: bold;
 }
 
@@ -31,12 +31,12 @@
 }
 
 .proyectos p {
-  color: #000000;
+  color: var(--project-texto);
   font-size: 16px;
 }
 
 .proyectos a {
-  color: #f3e600;
+  color: var(--project-texto4);
   align-items: center;
   display: inline-block;
   margin-right: 20px;
@@ -45,7 +45,7 @@
   height: 40px;
   top: 2px;
   border-radius: 8px;
-  background-color: #000000;
+  background-color: var(--project-fondo3);
 }
 
 .proyectos i {
@@ -70,13 +70,10 @@
 .proyectos .adv {
   align-items: center;
   text-align: center;
-  color: white;
+  color: var(--project-texto2);
   font-size: 16px;
   font-weight: bold;
 }
-
-
-
 
 .proyectos div {
   max-width: 100%;
@@ -101,34 +98,33 @@
   padding: 20px;
   text-align: center;
   font-weight: bold;
-  background-color: #f3e600;
+  background-color: var(--project-fondo2);
 }
 
 .elem:hover {
-  background-color: #000000;
+  background-color: var(--project-fondo3);
 }
 
 .elem:hover h3 {
-  color: #f3e600;
+  color: var(--project-texto2);
 }
 
 .elem:hover p {
-  color: white;
+  color: var(--project-texto2);
 }
 
 .elem:hover a {
-  color: #000000;
-  background-color: #f3e600;
+  color: var(--project-texto3);
+  background-color: var(--project-fondo2);
 }
 
 .elem:hover li {
-  background-color: #f3e600;
+  background-color: var(--project-texto);
 }
 
 .elem:last-child {
   margin-right: 0;
 }
-
 
 
 @media only screen and (max-width: 900px), only screen and (max-width: 600px) {

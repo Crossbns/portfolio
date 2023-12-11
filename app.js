@@ -21,3 +21,15 @@ const changeLanguage = async (language) => {
 flagsElement.addEventListener("click", (e) => {
     changeLanguage(e.target.parentElement.dataset.language);
 });
+
+window.onscroll = function() {
+    var scrollPosY = window.pageYOffset | document.body.scrollTop;
+    var gradientValue = Math.min(0.5, scrollPosY/100);
+    document.querySelector('.sidemenu').style.background = `linear-gradient(to bottom, rgba(0, 0, 0, ${gradientValue}), transparent)`;
+  }
+
+  function cambiarTema() {
+    const temaActual = document.documentElement.getAttribute('data-theme');
+    const nuevoTema = temaActual === 'oscuro' ? 'claro' : 'oscuro';
+    document.documentElement.setAttribute('data-theme', nuevoTema);
+  }

@@ -1,7 +1,9 @@
+
+/* Styles for the contact section and footer */
 footer {
   border-top: 1px solid;
   margin-left: 0;
-  background-color: #000000;
+  background-color: var(--contacto-fondo);
   width: 100%;
   max-width: 100%;
   padding: 30px;
@@ -14,17 +16,15 @@ footer {
   text-align: center;
   margin-left: 0;
   background-size: cover;
-  background-color: #000000;
+  background-color: var(--contacto-fondo);
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   max-width: 100%;
-
 }
 
 .contacto h2 {
-  color: #F3E600;
+  color: var(--contacto-texto3);
   display: center;
   text-align: center;
   font-weight: bold;
@@ -47,14 +47,10 @@ footer {
 }
 
 .contacto a {
-  color: white;
-  font-size:
-    30px;
-  margin:
-    0 10px
+  color: var(--contacto-texto);
+  font-size: 30px;
+  margin: 0 10px;
 }
-
-
 
 footer .container {
   max-width: 100%;
@@ -64,14 +60,12 @@ footer .container {
 
 footer p {
   text-align: center;
-  color: white;
+  color: var(--contacto-texto);
 }
 
 footer div {
   margin-top: 20px;
-
 }
-
 
 @media (max-width:600px) {
   footer {
