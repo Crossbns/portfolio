@@ -20,17 +20,22 @@
   color: #000000;
   font-weight: bold;
 }
-
 .about p {
-  align-items: center;
+  max-width: 50%; /* Limita el ancho al 50% del contenedor */
+  margin: auto; /* Centra el bloque en el contenedor */
+  justify-content: center;
   font-size: 24px;
   line-height: 1.5;
   color: #000000;
+  text-align: center;
 }
 
-.about div {
-  margin-left: 200px;
+
+.inicio div {
+  justify-content: center; /* Centra los elementos hijos horizontalmente */
+  align-items: center; /* Centra los elementos hijos verticalmente */
 }
+
 
 /* Estilos para pantallas pequeñas */
 @media only screen and (max-width: 600px), only screen and (max-width: 900px) {

@@ -1,68 +1,88 @@
 .sidemenu {
   position: fixed;
-  left: 0;
-  width: 195px;
-  height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+  width: 100%;
+  height: 100px; /* Ajusta esto según tus necesidades */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent); /* Cambia 'to right' por 'to bottom' */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+
 .elements {
   position: relative;
-  left: -2px;
-  top: -45px;
-  width: 175px;
-  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo negro con transparencia */
-  border: 2px solid #F3E600;
-  border-radius:8px;
-  transform: skewY(15deg);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  
-  /* Añade estas líneas */
+  display: flex; /* Añade esta línea para alinear los elementos horizontalmente */
+  justify-content: right; /* Añade esta línea para distribuir los elementos uniformemente */
+  width: 60%; /* Ajusta esto según tus necesidades */
+  border-radius: 16px;
+  border: 1px solid #F3E600; /* Especifica un ancho y un estilo para el borde */
+  background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(20px);
-}
-
-.elements p {
-  transform: skewY(-15deg);
+  margin-left: auto; /* Añade esta línea para posicionar el elemento a la derecha */
+  margin-right: 20px;
+  align-items: center; /* Añade esta línea para centrar los elementos en el eje vertical */
 }
 
 
 .elements a {
-  display: block;
-  padding: 25px;
+  display: inline-block;
+  padding-top: 20px;
+  margin: auto;
   text-decoration: none;
   font-size: 14px;
   font-weight: bold;
   color: white;
-  padding: 25px;
-  transform: skewY(0deg);
 }
 
-.elements a:hover {
+.elements p {
+  padding: 10px;
+}
+
+.elements a:hover p{
   background-color: #F3E600;
+  border-radius: 16px;
+  color: #000000;
+  padding: 10px;
 }
 
-.elements a:hover p {
+/*Banderas*/
+.flags {
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.flags_item {
+  width: 40px;
+  background-color: #F3E600;
+  border-radius: 8px;
+}
+
+.flags_item:hover {
+  background-color: white;
+}
+
+.flags_item:hover p {
   color: #000000;
 }
 
+.flags p {
+  cursor: pointer;
+  display: block;
+  color: #000000;
+  margin: auto;
+  padding: 10px;
 
-
-.elements a i {
-  margin-right: auto;
 }
 
-.sidemenu .elements {
-  margin-top: 100px;
-}
 
 
 @media (max-width: 600px),
 (max-width: 900px) {
+
   .sidemenu {
-    margin-bottom: 0;
     width: 100%;
     height: auto;
     display: flex;
@@ -70,45 +90,13 @@
     flex-direction: row;
     position: fixed;
     height: 50px;
-    bottom: 0;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     border: none;
-  }
-
-  .sidemenu.open {
+    bottom: 0;
     display: block;
   }
-
-  .elements a {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    text-align: center;
-    border-top: none;
-    border-bottom: none;
-    border-right: none;
-    width: auto;
-    display: inline-block;
-    line-height: 50px;
-    transform: skewY(15deg);
-    border-radius: 0px;
-
-  }
-
-  .sidemenu .elements a i {
-    font-size: 20px;
-    position: relative;
-    margin-bottom: 20px;
-    vertical-align: middle;
-    margin-right: 10px;
-  }
-
-  .sidemenu a:last-child i {
-    margin-right: 0;
-  }
-
 
   .elements {
     box-sizing: border-box;
@@ -118,14 +106,32 @@
     position: relative;
     left: 0px;
     right: 0px;
-    top: -45px;
+    top: -20px;
     width: 100%;
     height: auto;
     background-color: #000000;
     border: none;
-    transform: skewY(0deg);
     border-radius: 0;
   }
+
+  .elements a {
+    text-align: center;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    width: auto;
+    display: inline-block;
+    border-radius: 0px;
+
+  }
+
+  .sidemenu .elements a i {
+    font-size: 20px;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
   .menu-text {
     display: none;
   }
