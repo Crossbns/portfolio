@@ -2,20 +2,27 @@
 const flagsElement = document.getElementById("flags");
 const textsToChange = document.querySelectorAll("[data-section]");
 
-// Cambiar el idioma
+
 const changeLanguage = async (language) => {
     const requestJson = await fetch(`./languages/${language}.json`);
     const texts = await requestJson.json();
 
+    // Cambia el nombre de la variable a textElement
     for (const textElement of textsToChange) {
+        
         const section = textElement.dataset.section;
         const value = textElement.dataset.value;
-        textElement.innerHTML = texts[section][value];
+
+        // Usa textElement en lugar de textsToChange
+        textElement.innerHTML=texts[section][value];
+
     }
-}
+    
+};
+
 
 // Cambiar el tema
-function cambiarTema() {
+const cambiarTema = () => {
     const temaActual = document.documentElement.getAttribute('data-theme');
     const nuevoTema = temaActual === 'oscuro' ? 'claro' : 'oscuro';
     document.documentElement.setAttribute('data-theme', nuevoTema);
@@ -26,23 +33,18 @@ function cambiarTema() {
 }
 
 // Cambiar el idioma
-function cambiarIdioma() {
-    var boton = document.getElementById("textoIdioma");
+const cambiarIdioma = () => {
+    const boton = document.getElementById("textoIdioma");
     boton.innerHTML = boton.innerHTML === "ES" ? "EN" : "ES";
 }
 
 // Eventos
-document.getElementById("flags").addEventListener("click", function() {
-    let language = document.getElementById("flags").innerHTML;
-    changeLanguage(language.toLowerCase());
-});
-
 flagsElement.addEventListener("click", (e) => {
     changeLanguage(e.target.parentElement.dataset.language);
 });
 
-window.onscroll = function() {
-    var scrollPosY = window.pageYOffset | document.body.scrollTop;
-    var gradientValue = Math.min(0.5, scrollPosY/100);
+window.onscroll = () => {
+    const scrollPosY = window.pageYOffset | document.body.scrollTop;
+    const gradientValue = Math.min(0.5, scrollPosY/100);
     document.querySelector('.sidemenu').style.background = `linear-gradient(to bottom, rgba(0, 0, 0, ${gradientValue}), transparent)`;
 }
