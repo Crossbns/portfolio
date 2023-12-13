@@ -13,8 +13,7 @@
 }
 
 .inicio .port {
-  margin-bottom: 50px;
-  margin-top: 150px;
+  margin-top: 250px;
 }
 
 .inicio h2 {
@@ -28,8 +27,17 @@
   margin: -10px auto 0 auto;
   align-items: center;
   font-size: 24px;
+  font-weight: bold;
   line-height: 1.5;
   color: var(--color-texto);
+  margin-bottom: 300px;
+
+}
+
+
+
+.inicio a {
+  text-decoration: none;
 }
 
 .inicio div {
@@ -37,6 +45,43 @@
   align-items: center; /* Centra los elementos hijos verticalmente */
 }
 
+/* CSS */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  50% { border-color: transparent; }
+}
+
+@keyframes teclear {
+  from {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+
+.nombre-amarillo {
+  font-family: monospace;
+  overflow: hidden; /* Asegura que el contenido se ajuste al div */
+  border-right: .12em solid rgb(0, 0, 0); /* Simula el cursor parpadeante */
+  white-space: nowrap; /* Mantiene el contenido en una sola línea */
+  margin: 0 auto; /* Centra el div */
+  animation:
+  teclear 2s steps(30, end) 10s,
+    typing 1s steps(30, end) infinite 10s,
+    blink-caret .7s step-end infinite;
+    
+
+}
+
+.nombre-amarillo {
+  color: var(--inicio-texto);
+}
 
 @media only screen and (max-width: 600px), only screen and (max-width: 900px){
 
@@ -46,11 +91,14 @@
     margin-left: 0;
   }
 
-  .inicio div {
+  .inicio .port {
+    margin-bottom: 200px;
+    margin-top: 150px;
     margin-left: auto;
-
     margin-right: auto;
   }
+
+
 
   .inicio p {
     font-size: 18px;

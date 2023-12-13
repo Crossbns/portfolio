@@ -14,7 +14,8 @@
 }
 
 .about .port {
-  margin-bottom: 100px;
+  margin-bottom: 300px;
+  margin-top: 180px;
 }
 
 .about h2 {
@@ -30,15 +31,7 @@
   font-size: 24px;
   line-height: 1.5;
   color: var(--color-texto);
-  text-align: center;
 }
-
-.inicio div {
-  justify-content: center; /* Centra los elementos hijos horizontalmente */
-  align-items: center; /* Centra los elementos hijos verticalmente */
-}
-
-
 
 /* Estilos para pantallas pequeñas */
 @media only screen and (max-width: 600px), only screen and (max-width: 900px) {

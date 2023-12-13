@@ -55,13 +55,33 @@ window.onscroll = () => {
     document.querySelector('.sidemenu').style.background = `linear-gradient(to bottom, rgba(0, 0, 0, ${gradientValue}), transparent)`;
 }
 
+// JavaScript
+document.querySelectorAll('.siguiente').forEach(function(el) {
+    el.addEventListener('click', function() {
+      var nextSection = this.nextElementSibling;
+      if (nextSection) {
+        nextSection.scrollIntoView({ 
+          behavior: 'smooth' 
+        });
+      }
+    });
+  });
+  
+
 // Cambiar el tema
 const cambiarTema = () => {
-    const temaActual = document.documentElement.getAttribute('data-theme');
-    const nuevoTema = temaActual === 'oscuro' ? 'claro' : 'oscuro';
-    document.documentElement.setAttribute('data-theme', nuevoTema);
+  let temaActual = document.documentElement.getAttribute('data-theme');
+  if (!temaActual) {
+      temaActual = 'oscuro'; // Establece el tema oscuro como predeterminado
+  }
+  const nuevoTema = temaActual === 'oscuro' ? 'claro' : 'oscuro';
+  document.documentElement.setAttribute('data-theme', nuevoTema);
 
-    let icono = document.getElementById("iconoTema");
-    icono.classList.toggle("fa-sun");
-    icono.classList.toggle("fa-moon");
+  let icono = document.getElementById("iconoTema");
+  icono.classList.toggle("fa-sun");
+  icono.classList.toggle("fa-moon");
 }
+
+// Llama a la función al cargar la página para establecer el tema claro como predeterminado
+window.onload = cambiarTema;
+

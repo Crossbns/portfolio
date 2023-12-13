@@ -1,13 +1,21 @@
 
 /* Styles for the contact section and footer */
 footer {
-  border-top: 1px solid;
   margin-left: 0;
   background-color: var(--contacto-fondo);
   width: 100%;
   max-width: 100%;
   padding: 30px;
   overflow-x: hidden;
+}
+
+footer hr {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 200px;
+  color: var(--contacto-texto);
 }
 
 .contacto {

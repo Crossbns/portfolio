@@ -35,7 +35,7 @@
   display: flex; /* Añade esta línea para alinear los elementos horizontalmente */
   justify-content: right; /* Añade esta línea para distribuir los elementos uniformemente */
   width: 70%; /* Ajusta esto según tus necesidades */
-  border-radius: 16px;
+  border-radius: 32px;
   border: 1px solid #F3E600; /* Especifica un ancho y un estilo para el borde */
   background-color: var(--sidemenu-fondo);
   backdrop-filter: blur(20px);
@@ -98,6 +98,11 @@
   text-align: center; /* Alineación del texto al centro */
 }
 
+/* Oculta todos los iconos excepto el último */
+.sidemenu .elements i:not(:last-child) {
+  display: none;
+}
+
 
 
 
@@ -148,11 +153,13 @@
   }
 
   .sidemenu .elements a i {
-    font-size: 20px;
-    position: relative;
-    vertical-align: middle;
-    margin-right: 10px;
-  }
+    font-size: 20px; /* establece el tamaño de la fuente de los iconos a 20px */
+    position: relative; /* posiciona los iconos en relación con su posición normal */
+    vertical-align: middle; /* alinea verticalmente los iconos en el medio de la línea */
+    margin-right: 10px; /* añade un margen a la derecha de los iconos */
+    display: inline !important; /* muestra los iconos */
+}
+
 
   .menu-text {
     display: none;

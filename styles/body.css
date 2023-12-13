@@ -1,9 +1,12 @@
 :root {
+  --body-fondo: #ffffff;
+  --body-fondo2: #F3E600;
   --sidemenu-fondo: #F3E600;
   --sidemenu-fondo2: #000000;
   --sidemenu-texto: #000000;
   --sidemenu-texto2: #ffffff;
   --inicio-fondo: #ffffff;
+  --inicio-texto: #F3E600;
   --acerca-fondo: #ffffff;
   --skills-fondo: #F3E600;
   --skills-fondo2: #000000;
@@ -24,14 +27,19 @@
   --color-texto: #000000;
   --boton-texto: #000000;
   --boton-texto2: #ffffff;
+  --general-texto: #ffffff;
+  --general-texto2: #000000;
 }
 
 [data-theme="oscuro"] {
+  --body-fondo: #F3E600;
+  --body-fondo: #000000;
   --sidemenu-fondo: #000000;
   --sidemenu-fondo2: #F3E600;
   --sidemenu-texto: #ffffff;
   --sidemenu-texto2: #000000;
   --inicio-fondo: #F3E600;
+  --inicio-texto: #ffffff;
   --acerca-fondo: #F3E600;
   --skills-fondo: #000000;
   --skills-fondo2: #F3E600;;
@@ -52,6 +60,8 @@
   --color-texto: #000000;
   --boton-texto: #ffffff;
   --boton-texto2: #F3E600;
+  --general-texto: #ffffff;
+  --general-texto2: #000000;
 }
 
 
@@ -65,7 +75,6 @@ body {
   font-family: 'Hack Nerd Font', sans-serif;
   line-height: 1.2;
   width: 100%;
-  overflow-x: hidden;
 }
 
 :root {
@@ -79,10 +88,52 @@ body {
   box-sizing: border-box;
 }
 
+.seccion::after {
+  content: "";
+  display: block;
+  margin: auto; /* Centra la línea */
+  width: 50%; /* Controla la longitud de la línea */
+  border-bottom: 1px solid black; /* Añade la línea */
+}
+
 section {
   padding: 20px;
   width: 100%;
+  scroll-margin-top: 1em;
 }
+
+
+.general {
+  font-weight: bold;
+  width: 50%;
+  bottom: 0;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var( --general-texto);
+  max-width: 50%;
+}
+
+
+.hr {
+  font-weight: bold;
+  width: 50%;
+  bottom: 0;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--general-texto2);
+  max-width: 50%;
+}
+
+.general, .hr {
+  background-color: transparent;
+}
+
 
 @media only screen and (max-width: 600px) {
   body {
