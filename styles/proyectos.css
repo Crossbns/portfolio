@@ -106,6 +106,7 @@
 
 
 .general {
+  z-index: 0;
   font-weight: bold;
   width: 50%;
   bottom: 0;
@@ -117,6 +118,7 @@
   color: var( --general-texto);
   max-width: 50%;
 }
+
 
 .elem:hover {
   background-color: var(--project-fondo3);

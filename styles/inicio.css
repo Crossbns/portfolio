@@ -72,15 +72,26 @@
   white-space: nowrap; /* Mantiene el contenido en una sola línea */
   margin: 0 auto; /* Centra el div */
   animation:
-  teclear 2s steps(30, end) 10s,
     typing 1s steps(30, end) infinite 10s,
-    blink-caret .7s step-end infinite;
-    
-
+    blink-caret .7s step-end infinite,
+    teclear 2s steps(30, end); 
 }
 
 .nombre-amarillo {
   color: var(--inicio-texto);
+}
+
+.hr {
+  font-weight: bold;
+  width: 50%;
+  bottom: 0;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--general-texto2);
+  max-width: 50%;
 }
 
 @media only screen and (max-width: 600px), only screen and (max-width: 900px){

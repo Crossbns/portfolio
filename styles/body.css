@@ -103,36 +103,9 @@ section {
 }
 
 
-.general {
-  font-weight: bold;
-  width: 50%;
-  bottom: 0;
-  top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  color: var( --general-texto);
-  max-width: 50%;
-}
 
 
-.hr {
-  font-weight: bold;
-  width: 50%;
-  bottom: 0;
-  top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  color: var(--general-texto2);
-  max-width: 50%;
-}
 
-.general, .hr {
-  background-color: transparent;
-}
 
 
 @media only screen and (max-width: 600px) {
