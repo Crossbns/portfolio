@@ -21,6 +21,7 @@
   color: var(--color-texto);
   font-size: 60px;
   font-weight: bold;
+  margin-right: 35px ;
 }
 
 .inicio p {
@@ -40,16 +41,13 @@
   text-decoration: none;
 }
 
-.inicio div {
+.inicio .port {
+  display: flex;
+  flex-direction: row;
   justify-content: center; /* Centra los elementos hijos horizontalmente */
-  align-items: center; /* Centra los elementos hijos verticalmente */
-}
+  align-items: center;
+ }
 
-/* CSS */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
 
 @keyframes blink-caret {
   50% { border-color: transparent; }
@@ -64,22 +62,21 @@
   }
 }
 
-
-.nombre-amarillo {
+.inicio .port h3{
+  font-size: 60px;
+  font-weight: bold;
+  color: var(--inicio-texto);
   font-family: monospace;
   overflow: hidden; /* Asegura que el contenido se ajuste al div */
   border-right: .12em solid rgb(0, 0, 0); /* Simula el cursor parpadeante */
   white-space: nowrap; /* Mantiene el contenido en una sola línea */
   margin: 0 auto; /* Centra el div */
   animation:
-    typing 1s steps(30, end) infinite 10s,
-    blink-caret .7s step-end infinite,
-    teclear 2s steps(30, end); 
+  blink-caret .7s step-end infinite,
+  teclear 2s steps(30, end);
+
 }
 
-.nombre-amarillo {
-  color: var(--inicio-texto);
-}
 
 .hr {
   font-weight: bold;
