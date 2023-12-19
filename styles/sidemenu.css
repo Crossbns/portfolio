@@ -85,7 +85,7 @@
 }
 
 .flags_item:hover p {
-  color: var( --sidemenu-texto);
+  color: black;
 }
 
 .flags p {

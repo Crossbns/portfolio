@@ -14,7 +14,7 @@
   align-items: center;
   text-align: center;
   font-weight: bold;
-  color: var(--project-texto2);
+  color: var(--h2-text);
 }
 
 .elem h3 {

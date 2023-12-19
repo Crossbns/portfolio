@@ -8,6 +8,7 @@
   --inicio-fondo: #ffffff;
   --inicio-texto: #F3E600;
   --acerca-fondo: #ffffff;
+  --skills-text: #000000;
   --skills-fondo: #F3E600;
   --skills-fondo2: #000000;
   --skills-texto: #000000;
@@ -42,7 +43,8 @@
   --inicio-texto: #ffffff;
   --acerca-fondo: #F3E600;
   --skills-fondo: #000000;
-  --skills-fondo2: #F3E600;;
+  --skills-fondo2: #F3E600;
+  --h2-text: #F3E600;
   --skills-texto: #ffffff;
   --skills-texto2: #000000;
   --project-fondo: #000000;
